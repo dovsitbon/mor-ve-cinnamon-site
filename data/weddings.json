@@ -1,0 +1,100 @@
+{
+  "_note": "Une entrée par couple, d'après leurs publications Instagram. Les autres couples des stories à la une (Yael & Eshel, Shahar & Alon, Noam & Hanan, Adi & Assaf, Lihi & Yonatan, Alin & Assaf, Neta & Ron, Or & Itay, Dafni & Alon) seront ajoutés quand leurs photos et leur accord seront fournis.",
+  "weddings": [
+    {
+      "id": "roni-itay",
+      "date": "2026-10-09",
+      "cover": "/media/couples/roni-itay-mariee-fleurs.jpg",
+      "credits": [["production", "makers.events"], ["film", "niv_shaul_films"]],
+      "photos": [
+        "/media/couples/roni-itay-mariee-fleurs.jpg",
+        "/media/couples/roni-itay-sourire.jpg",
+        "/media/lounges-deco/table-vase-vert.jpg",
+        "/media/couples/roni-itay-lounge.jpg",
+        "/media/lounges-deco/tables-hautes-roses.jpg",
+        "/media/stations-buffets/station-pates-tomates.jpg",
+        "/media/lounges-deco/table-fleurs-tropicales.jpg",
+        "/media/cuisine/pates-legumes-grilles.jpg",
+        "/media/lounges-deco/lounge-rose-orange.jpg",
+        "/media/stations-buffets/chef-brochettes-braise.jpg",
+        "/media/lounges-deco/vases-tulipes.jpg",
+        "/media/cuisine/assiettes-poulet-haricots.jpg",
+        "/media/galerie/vue-aerienne-tables.jpg",
+        "/media/stations-buffets/grill-flammes.jpg",
+        "/media/lounges-deco/lounge-terracotta.jpg",
+        "/media/couples/roni-itay-danse.jpg"
+      ]
+    },
+    {
+      "id": "hila-rotem",
+      "date": null,
+      "cover": "/media/couples/hila-rotem-marche.jpg",
+      "credits": [["design", "amare_by_sap"], ["photo", "absstudio.social"]],
+      "photos": [
+        "/media/couples/hila-rotem-marche.jpg",
+        "/media/couples/hila-rotem-houppa.jpg",
+        "/media/chupa-ceremonies/houppa-voilages-tapis.jpg",
+        "/media/lounges-deco/tournesols-vase-blanc.jpg",
+        "/media/couples/hila-rotem-mains.jpg",
+        "/media/galerie/champagne-grenades.jpg",
+        "/media/lounges-deco/lounge-coussins-verts.jpg",
+        "/media/equipe-montage/fleuriste-hortensias.jpg",
+        "/media/chupa-ceremonies/voilage-olivier.jpg",
+        "/media/equipe-montage/mise-en-place-bougies.jpg",
+        "/media/equipe-montage/vase-blanc-mains.jpg"
+      ]
+    },
+    {
+      "id": "einav-davidi",
+      "date": null,
+      "cover": "/media/couples/einav-davidi-tables.jpg",
+      "credits": [["flowers", "sentimental_events_flowers"], ["equipment", "ofir_events"], ["sound", "etl_producions"], ["bar", "julio.cocktails"], ["tableware", "gilmuskal"], ["tipis", "icamp.israel"]],
+      "photos": [
+        "/media/couples/einav-davidi-tables.jpg",
+        "/media/lounges-deco/tipi-lounge-dore.jpg",
+        "/media/couples/einav-davidi-houppa.jpg",
+        "/media/lounges-deco/tables-coucher-soleil.jpg",
+        "/media/lounges-deco/lounge-coussins-lin.jpg",
+        "/media/couples/einav-davidi-olivier.jpg",
+        "/media/lounges-deco/tables-rondes-fleurs.jpg",
+        "/media/lounges-deco/tipi-olivier.jpg",
+        "/media/stations-buffets/marmite-cuivre-tomates.jpg",
+        "/media/lounges-deco/tables-bois-fleurs.jpg",
+        "/media/equipe-montage/montage-tipis.jpg",
+        "/media/lounges-deco/tables-bois-guirlandes.jpg"
+      ]
+    },
+    {
+      "id": "noam-nadav",
+      "date": null,
+      "cover": "/media/couples/noam-nadav.jpg",
+      "credits": [],
+      "photos": [
+        "/media/couples/noam-nadav.jpg",
+        "/media/lounges-deco/tables-palmiers.jpg",
+        "/media/stations-buffets/installation-legumes.jpg",
+        "/media/lounges-deco/lounge-parasols.jpg",
+        "/media/cuisine/bruschettas-tomates.jpg",
+        "/media/stations-buffets/buffet-grenades-olivier.jpg",
+        "/media/equipe-montage/equipe-buffet.jpg",
+        "/media/cuisine/barquettes-laitue-grenade.jpg",
+        "/media/stations-buffets/patates-douces-grill.jpg",
+        "/media/galerie/verres-alignes.jpg",
+        "/media/stations-buffets/station-grenades.jpg",
+        "/media/equipe-montage/dressage-assiettes.jpg",
+        "/media/cuisine/cocotte-brioche.jpg"
+      ]
+    },
+    {
+      "id": "adi-nimi",
+      "date": null,
+      "cover": "/media/couples/adi-nimi.jpg",
+      "credits": [["production", "nesher_shachor"]],
+      "photos": [
+        "/media/couples/adi-nimi.jpg",
+        "/media/lounges-deco/table-polaroids-grenades.jpg",
+        "/media/stations-buffets/station-chef-poeles.jpg"
+      ]
+    }
+  ]
+}

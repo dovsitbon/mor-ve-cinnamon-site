@@ -1,0 +1,16 @@
+{
+  "_note": "Partenaires tagués dans les publications de Mor & Cinnamon. Section à valider avec eux (accord des partenaires) ; mettre show: false pour en masquer un.",
+  "partners": [
+    { "handle": "amare_by_sap", "role": "design", "show": true },
+    { "handle": "sentimental_events_flowers", "role": "flowers", "show": true },
+    { "handle": "makers.events", "role": "production", "show": true },
+    { "handle": "ofir_events", "role": "equipment", "show": true },
+    { "handle": "caesarevents", "role": "equipment", "show": true },
+    { "handle": "gilmuskal", "role": "tableware", "show": true },
+    { "handle": "julio.cocktails", "role": "bar", "show": true },
+    { "handle": "etl_producions", "role": "sound", "show": true },
+    { "handle": "icamp.israel", "role": "tipis", "show": true },
+    { "handle": "niv_shaul_films", "role": "film", "show": true },
+    { "handle": "absstudio.social", "role": "photo", "show": true }
+  ]
+}

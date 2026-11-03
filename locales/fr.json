@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "title": "Traiteur et production de mariages en plein air en Israël | Mor & Cinnamon",
+    "description": "Mor & Cinnamon : traiteur de saison et production complète de mariages en plein air en Israël. Mariages dans la ferme familiale, les vergers ou la nature, du premier plan au dernier verre.",
+    "legalTitle": "Conditions et confidentialité | Mor & Cinnamon",
+    "legalDescription": "Conditions d'utilisation du site Mor & Cinnamon et politique de confidentialité du formulaire de devis."
+  },
+  "nav": {
+    "skip": "Aller au contenu",
+    "menu": "Menu",
+    "close": "Fermer",
+    "home": "Mor & Cinnamon, accueil",
+    "language": "Langue",
+    "catering": "Le traiteur",
+    "production": "La production",
+    "weddings": "Nos mariages",
+    "process": "Comment ça marche",
+    "contact": "Contact",
+    "checkDate": "Vérifier une date",
+    "checkDateShort": "Votre date"
+  },
+  "intro": {
+    "skip": "Passer"
+  },
+  "hero": {
+    "eyebrow": "TRAITEUR & PRODUCTION · ISRAËL",
+    "title": "Du premier plan au dernier verre",
+    "cta": "Racontez-nous votre événement",
+    "whatsapp": "WhatsApp",
+    "scroll": "Descendre vers le contenu"
+  },
+  "manifesto": {
+    "eyebrow": "Mor & Cinnamon",
+    "title": "Une cuisine locale, de saison et fraîche. Un événement fait pour vous seuls.",
+    "text": "Nous cuisinons ce que la saison nous donne : légumes frais, fruits mûrs, feu de bois et beaucoup d'imagination. Avec le même soin, nous produisons tout ce qui entoure l'assiette, de la première table posée dans le champ au dernier verre de la nuit. Chaque événement part de votre histoire, c'est pourquoi aucun ne ressemble au précédent.",
+    "link": "Ce que nous faisons"
+  },
+  "pillars": {
+    "eyebrow": "Ce que nous faisons",
+    "title": "La table, la production, le plein air",
+    "items": [
+      {
+        "name": "Traiteur",
+        "label": "Une cuisine de saison",
+        "text": "Un menu écrit autour de vous : stations vivantes, plats servis à table et desserts qui font revenir pour une deuxième assiette.",
+        "link": "Le traiteur"
+      },
+      {
+        "name": "Production",
+        "label": "Production complète",
+        "text": "Montage, lounges, éclairage, équipe et coordination de tous les prestataires. Vous vous mariez, nous nous occupons du reste.",
+        "link": "La production"
+      },
+      {
+        "name": "Mariages en plein air",
+        "label": "Ferme, verger, nature",
+        "text": "Dans la ferme de vos parents, dans un verger, une oliveraie ou le paysage de votre enfance. Chaque terrain peut devenir un mariage.",
+        "link": "Nos mariages"
+      }
+    ]
+  },
+  "catering": {
+    "eyebrow": "Traiteur de saison",
+    "title": "Une cuisine qui suit la saison",
+    "text": "Le menu est réécrit pour chaque événement, selon la saison, le lieu et vos invités. Tomates et pêches en été, courges et grenades à l'automne, et toujours beaucoup de vert, du pain frais et du feu.",
+    "quote": "Une cuisine qui ressemble à un grand dîner de famille, avec le coucher de soleil en toile de fond.",
+    "menusEyebrow": "Exemples de menus",
+    "menusTitle": "Trois moments d'une même soirée",
+    "menusNote": "Exemples tirés d'événements récents. Chaque menu est construit sur mesure ; la proposition complète suit un premier échange.",
+    "priceFrom": "À partir de {price} par invité",
+    "onRequest": "Prix sur devis",
+    "menuCta": "Composer votre menu",
+    "menus": {
+      "stations": {
+        "name": "Stations vivantes",
+        "text": "Les chefs cuisinent devant vos invités, au feu de bois et à la plancha.",
+        "dishes": [
+          "Pâtes fraîches aux tomates de saison",
+          "Brochettes et viandes au feu de bois",
+          "Légumes entiers sur la braise",
+          "Patate douce grillée",
+          "Bruschettas à la tomate",
+          "Feuilles de laitue garnies et grenade"
+        ]
+      },
+      "served": {
+        "name": "Servi à table",
+        "text": "Des plats qui arrivent chauds à table, généreux et simples, comme un repas de famille.",
+        "dishes": [
+          "Rôti de bœuf tranché et pommes de terre au four",
+          "Poulet grillé, céréales et légumes verts",
+          "Salade de feuilles aux pêches",
+          "Salade de tomates de saison",
+          "Pain frais et condiments"
+        ]
+      },
+      "desserts": {
+        "name": "Desserts",
+        "text": "Une table sucrée vers laquelle on revient sans cesse.",
+        "dishes": [
+          "Pavlova, crème et fruits rouges",
+          "Gâteau au chocolat et crème",
+          "Pièce montée de choux",
+          "Crumble aux fruits de saison",
+          "Fruits secs et noix"
+        ]
+      }
+    }
+  },
+  "bleed": {
+    "eyebrow": "Mariage à la ferme · Einav & Davidi",
+    "title": "Rien de plus émouvant",
+    "text": "Se marier dans la ferme de ses parents, dans le paysage de son enfance, entouré de tous ceux qu'on aime."
+  },
+  "production": {
+    "eyebrow": "Production de mariages en plein air",
+    "title": "Tout ce qui entoure l'assiette",
+    "text": "Un mariage en plein air commence par un terrain vide. Nous le construisons détail après détail, et nous le menons jusqu'au départ du dernier invité.",
+    "items": [
+      {
+        "name": "Montage",
+        "text": "Tables, chaises, tentes et pergolas, installées sur le terrain selon un plan précis."
+      },
+      {
+        "name": "Lounges et décoration",
+        "text": "Coins salon, textiles, fleurs et vaisselle, avec les décorateurs que vous aimez."
+      },
+      {
+        "name": "Éclairage",
+        "text": "Guirlandes lumineuses et lumière chaude qui prolongent le coucher de soleil dans la nuit."
+      },
+      {
+        "name": "Équipe",
+        "text": "Une équipe de cuisine et de service qui travaille d'un seul geste, discrètement et avec le sourire, de l'accueil au dessert."
+      },
+      {
+        "name": "Coordination des prestataires",
+        "text": "Décoration, son, bar, photo : nous coordonnons tout le monde, vous n'avez qu'un seul interlocuteur."
+      },
+      {
+        "name": "Gestion du jour J",
+        "text": "Du montage du matin au démontage, l'un de nous est là pour que tout arrive à l'heure."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Comment ça marche",
+    "title": "Du premier appel au dernier verre",
+    "quote": "Derrière chaque moment inoubliable, il y a tout un chemin : les premiers montages, les petits détails, et l'instant où tout se rassemble en une seule soirée.",
+    "steps": [
+      {
+        "name": "Premier appel",
+        "text": "Vous nous racontez ce que vous imaginez : la date, le lieu, le nombre d'invités et l'ambiance."
+      },
+      {
+        "name": "Visite du lieu",
+        "text": "Nous nous retrouvons sur place, vérifions l'accès, l'électricité, l'eau et l'ombre, et le mariage commence à prendre forme."
+      },
+      {
+        "name": "Menu et décoration",
+        "text": "Nous construisons ensemble un menu de saison et un plan de décoration, et coordonnons tous les prestataires."
+      },
+      {
+        "name": "Montage",
+        "text": "L'équipe arrive sur le terrain et installe tout : mobilier, lounges, éclairage et cuisine de plein air."
+      },
+      {
+        "name": "Le jour J",
+        "text": "Vous vous mariez. Nous gérons la cuisine, le service et le déroulé de la soirée."
+      },
+      {
+        "name": "Le dernier verre",
+        "text": "Nous levons un dernier verre avec vous, et seulement ensuite nous commençons à démonter."
+      }
+    ]
+  },
+  "weddings": {
+    "eyebrow": "Nos mariages",
+    "title": "Ils ont dit oui en plein air",
+    "text": "Chaque mariage raconte une autre histoire. En voici quelques-uns parmi les plus récents.",
+    "open": "Ouvrir la galerie de {names}",
+    "photos": "{count} photos",
+    "with": "Avec",
+    "names": {
+      "roni-itay": "Roni & Itay",
+      "hila-rotem": "Hila & Rotem",
+      "einav-davidi": "Einav & Davidi",
+      "noam-nadav": "Noam & Nadav",
+      "adi-nimi": "Adi & Nimi"
+    },
+    "notes": {
+      "roni-itay": "Un mariage tout en couleurs",
+      "hila-rotem": "Vert, blanc et tournesols",
+      "einav-davidi": "Dans la ferme familiale",
+      "noam-nadav": "Du premier plan au dernier verre",
+      "adi-nimi": "Une fête en pleine nature"
+    },
+    "roles": {
+      "production": "Production",
+      "design": "Décoration",
+      "flowers": "Décoration et fleurs",
+      "equipment": "Matériel",
+      "tableware": "Vaisselle",
+      "bar": "Bar",
+      "sound": "Son et lumière",
+      "tipis": "Tentes tipi",
+      "film": "Vidéo",
+      "photo": "Photo"
+    },
+    "close": "Fermer",
+    "prev": "Photo précédente",
+    "next": "Photo suivante",
+    "counter": "{index} sur {count}"
+  },
+  "upClose": {
+    "eyebrow": "De près",
+    "title": "Les petits détails",
+    "text": "Une grenade sur la table, un premier verre au coucher du soleil, des braises encore rouges. Les petits moments qui font une soirée.",
+    "open": "Agrandir la photo"
+  },
+  "partners": {
+    "eyebrow": "Partenaires",
+    "title": "Les prestataires avec qui nous aimons travailler",
+    "text": "Un beau mariage est un travail d'équipe. Voici quelques-unes des personnes derrière nos derniers événements."
+  },
+  "reviews": {
+    "eyebrow": "Avis",
+    "title": "Ce que racontent nos couples",
+    "empty": "Leurs histoires, racontées par les couples eux-mêmes, sont dans les stories à la une de notre Instagram.",
+    "cta": "Voir les stories à la une"
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Avant de commencer",
+    "items": [
+      {
+        "q": "La cuisine est-elle casher ?",
+        "a": "Indiquez-nous dans le formulaire si vous souhaitez un événement casher, et nous verrons ensemble les options possibles."
+      },
+      {
+        "q": "Où travaillez-vous ?",
+        "a": "Les mariages et les fêtes en pleine nature sont notre terrain : ferme familiale, verger, oliveraie, jardin privé ou terrain que vous n'avez pas encore trouvé. Vous cherchez encore un lieu ? Dites-le-nous, nous y réfléchirons ensemble."
+      },
+      {
+        "q": "Et l'électricité, l'eau et les sanitaires sur place ?",
+        "a": "Tout se prévoit à l'avance. Lors de la visite, nous regardons ce qui existe et ce qu'il faut apporter, comme un groupe électrogène, l'eau, l'éclairage et les sanitaires, et nous coordonnons les prestataires."
+      },
+      {
+        "q": "Pour combien d'invités ?",
+        "a": "La cuisine, l'équipe et le montage sont prévus selon votre nombre d'invités. Dites-nous combien vous en attendez, nous reviendrons vers vous avec une proposition."
+      },
+      {
+        "q": "Combien de temps à l'avance faut-il vous contacter ?",
+        "a": "Dès que vous avez une date, ou même une saison. En haute saison, les dates partent vite, et un mariage en plein air demande aussi du temps de préparation."
+      },
+      {
+        "q": "Peut-on réserver seulement le traiteur, ou seulement la production ?",
+        "a": "Oui : le traiteur seul, la production seule, ou les deux ensemble. Il suffit de le cocher dans le formulaire."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Contact",
+    "title": "Vous préparez un mariage ? Racontez-nous ce que vous imaginez",
+    "text": "Quelques détails, et votre demande nous arrive sur WhatsApp avec toutes les informations. Nous vous répondons rapidement.",
+    "steps": {
+      "event": "L'événement",
+      "service": "Ce dont vous avez besoin",
+      "contact": "Vos coordonnées"
+    },
+    "fields": {
+      "eventType": "Type d'événement",
+      "eventTypes": {
+        "wedding": "Mariage",
+        "henna": "Henné",
+        "barmitzvah": "Bar / Bat Mitzvah",
+        "family": "Fête de famille",
+        "corporate": "Événement d'entreprise",
+        "other": "Autre"
+      },
+      "guests": "Nombre d'invités",
+      "date": "Date estimée",
+      "dateBooked": "Cette date est déjà notée comme prise chez nous. Envoyez quand même : nous regarderons ensemble les possibilités.",
+      "venue": "Le lieu",
+      "venues": {
+        "have": "Nous avons un lieu",
+        "search": "Nous cherchons un lieu"
+      },
+      "venueName": "Où ?",
+      "venuePlaceholder": "Nom du lieu ou de la ville",
+      "kosher": "Casher",
+      "kosherOptions": {
+        "kosher": "Casher",
+        "not": "Pas casher"
+      },
+      "source": "Comment nous avez-vous connus",
+      "sources": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "friends": "Recommandation d'amis",
+        "event": "J'étais à l'un de vos événements",
+        "supplier": "Par un prestataire ou un lieu",
+        "google": "Google",
+        "other": "Autre"
+      },
+      "sourceNone": "Choisir",
+      "services": "Prestations souhaitées",
+      "serviceOptions": {
+        "catering": "Traiteur",
+        "production": "Production",
+        "both": "Traiteur et production"
+      },
+      "budget": "Budget indicatif",
+      "budgets": [
+        "Jusqu'à 50 000 ₪",
+        "50 000 – 100 000 ₪",
+        "100 000 – 200 000 ₪",
+        "Plus de 200 000 ₪",
+        "Pas encore défini"
+      ],
+      "budgetNone": "Choisir",
+      "optional": "facultatif",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "message": "Racontez-nous ce que vous imaginez",
+      "messagePlaceholder": "L'ambiance, les couleurs, la cuisine que vous aimez, tout ce qui vous passe par la tête"
+    },
+    "required": "Champ obligatoire",
+    "invalidPhone": "Ce numéro ne semble pas valide",
+    "invalidEmail": "Cette adresse e-mail ne semble pas valide",
+    "submit": "Envoyer sur WhatsApp",
+    "hint": "WhatsApp s'ouvre avec le récapitulatif de votre demande ; il ne reste qu'à appuyer sur envoyer.",
+    "consent": "Vos coordonnées servent uniquement à vous répondre au sujet de votre événement.",
+    "success": {
+      "thanks": "Merci",
+      "title": "Votre demande est prête sur WhatsApp",
+      "text": "Si WhatsApp ne s'est pas ouvert, vous pouvez l'ouvrir ici. Nous vous répondons rapidement.",
+      "again": "Ouvrir WhatsApp",
+      "reset": "Nouvelle demande"
+    },
+    "message": {
+      "title": "Demande de devis · Mor & Cinnamon",
+      "event": "Événement",
+      "guests": "Invités",
+      "date": "Date estimée",
+      "venue": "Lieu",
+      "kosher": "Casher",
+      "source": "Nous a connus par",
+      "services": "Prestations",
+      "budget": "Budget",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "notes": "Ce que nous imaginons",
+      "ref": "N° de demande",
+      "closing": "Envoyé depuis le site de Mor & Cinnamon"
+    }
+  },
+  "email": {
+    "subjectBusiness": "Nouvelle demande de devis",
+    "subjectClient": "Nous avons bien reçu votre demande · Mor & Cinnamon",
+    "intro": "Merci pour votre message ! Voici le récapitulatif de votre demande ; nous vous répondons rapidement."
+  },
+  "whatsapp": {
+    "float": "Écrire sur WhatsApp",
+    "hello": "Bonjour Mor & Cinnamon, nous avons vu votre site et aimerions en savoir plus pour un événement."
+  },
+  "footer": {
+    "tagline": "Traiteur de saison et production de mariages en plein air, du premier plan au dernier verre.",
+    "contact": "Contact",
+    "explore": "Sur le site",
+    "legal": "Conditions et confidentialité",
+    "rights": "Tous droits réservés",
+    "photos": "Photos des événements de Mor & Cinnamon, par les photographes cités dans leurs publications."
+  },
+  "legal": {
+    "title": "Conditions et confidentialité",
+    "back": "Retour à l'accueil",
+    "sections": [
+      {
+        "title": "Le site",
+        "text": "Ce site présente les services de traiteur et de production de Mor & Cinnamon. Les photos et vidéos ont été prises lors d'événements que nous avons produits ou servis ; elles appartiennent à Mor & Cinnamon et à leurs photographes."
+      },
+      {
+        "title": "Le formulaire de demande",
+        "text": "Les informations saisies (nom, téléphone, e-mail et détails de l'événement) nous sont envoyées sur WhatsApp et, si vous avez indiqué un e-mail, par e-mail. Elles servent uniquement à vous répondre au sujet de votre événement et ne sont transmises à personne."
+      },
+      {
+        "title": "Cookies et stockage",
+        "text": "Le site n'utilise aucun cookie publicitaire ni de suivi. Seuls votre choix de langue et la préférence de ne pas rejouer l'animation d'ouverture sont conservés."
+      },
+      {
+        "title": "Contact",
+        "text": "Pour toute question, ou pour demander la suppression de vos données, écrivez-nous sur WhatsApp au +972 50-536-8876."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Le lien a peut-être changé. Revenez à l'accueil pour continuer.",
+    "back": "Retour à l'accueil"
+  },
+  "alt": {
+    "poster-panel": "Hila et Rotem marchent main dans la main vers la houppa, dans un jardin ombragé",
+    "poster-tall": "Hila et Rotem marchent main dans la main vers la houppa, dans un jardin ombragé",
+    "houppa-voilages-tapis": "Houppa aux voilages blancs et tapis, entre les arbres",
+    "voilage-olivier": "Voilage blanc noué à un olivier avant la cérémonie",
+    "adi-nimi": "Adi et Nimi enlacés au milieu de leurs invités",
+    "einav-davidi-houppa": "Einav et Davidi s'embrassent sous la houppa",
+    "einav-davidi-olivier": "Einav et Davidi enlacés sous une tente, entre les oliviers",
+    "einav-davidi-tables": "Einav et Davidi passent entre les tables de la ferme, sous les guirlandes",
+    "hila-rotem-houppa": "Hila et Rotem s'embrassent sous la houppa",
+    "hila-rotem-mains": "Les mains de Hila et Rotem, robe en dentelle et chemise blanche",
+    "hila-rotem-marche": "Hila et Rotem marchent main dans la main vers la houppa",
+    "noam-nadav": "Noam et Nadav avec une petite fille en robe rose, dans le jardin",
+    "roni-itay-danse": "Roni et Itay dansent au coucher du soleil",
+    "roni-itay-lounge": "Roni et Itay rient dans un lounge orange",
+    "roni-itay-mariee-fleurs": "Roni, la mariée, en robe blanche au milieu de fleurs orange",
+    "roni-itay-sourire": "Roni sourit au milieu des fleurs",
+    "roni-mariee": "Roni en robe de satin blanc, sur le lieu de la fête",
+    "assiette-boeuf-salade": "Assiette de bœuf rôti, salade et tomates, tenue à la main",
+    "assiette-focaccia-viande": "Assiette de pain, viande effilochée, herbes et crème",
+    "assiettes-poulet-haricots": "Assiettes de poulet, haricots verts et céréales",
+    "barquettes-laitue-grenade": "Feuilles de laitue garnies à côté de grenades",
+    "barquettes-salade": "Plateau de bouchées vertes servi dans le jardin",
+    "boeuf-pommes-de-terre": "Rôti de bœuf tranché et pommes de terre au four",
+    "boeuf-tranche": "Un chef tranche la viande sur la plancha",
+    "bouchees-piment": "Petites bouchées au piment sur une planche en bois",
+    "bruschettas-tomates": "Bruschettas à la tomate sur un plateau",
+    "chef-dressage": "Un chef sert une assiette depuis une grande poêle",
+    "choux-presentoir": "Choux à la crème sur un présentoir",
+    "cocotte-brioche": "Cocotte mijotée et brioche tressée sur une station",
+    "crostinis-planche": "Crostinis sur une planche de service",
+    "desserts-assiettes": "Assiettes de dessert au crumble et aux fruits",
+    "entrees-plateau-argent": "Plateau d'argent garni de petites entrées",
+    "gateau-chocolat-creme": "Part de gâteau au chocolat et crème",
+    "meringue-coulis": "Saladier de meringue, coulis de fruits rouges et assiettes de dessert",
+    "pates-legumes-grilles": "Pâtes et légumes grillés dans des assiettes blanches",
+    "pavlova-fruits-rouges": "Pavlova, crème et coulis de fruits rouges",
+    "poulet-grille-boulgour": "Poulet grillé et céréales dans des assiettes festonnées",
+    "salade-peches": "Salade de feuilles aux pêches dans un bol blanc",
+    "dressage-assiettes": "Une serveuse dresse les assiettes sur une pile",
+    "dressage-haricots": "Assiettes de haricots verts et céréales sur une station",
+    "equipe-buffet": "Service d'un cocktail à côté d'une caisse d'oranges",
+    "fleuriste-hortensias": "Une fleuriste compose un bouquet blanc",
+    "mise-en-place-bougies": "Mise en place des bougies et des tables avant l'événement",
+    "montage-tipis": "L'équipe monte les tentes tipi dans la ferme",
+    "service-assiette": "Une serveuse dresse une assiette sur une station",
+    "service-desserts": "Service de fruits secs depuis un bol en bois",
+    "service-salades-tomates": "Plats de salade de tomates sur la table",
+    "vase-blanc-mains": "Vase blanc posé sur une souche",
+    "champagne-grenades": "Bouteilles de champagne dans un seau et grenades",
+    "invites-desserts": "Des invitées goûtent les desserts",
+    "invites-lounge": "Des invités mangent dans un lounge",
+    "spritz-bar": "Verres de spritz sur le bar au coucher du soleil",
+    "verres-alignes": "Rangées de verres à vin avant l'événement",
+    "vue-aerienne-tables": "Vue du ciel sur les tables et les lounges",
+    "vue-aerienne": "Vue aérienne de la fête au milieu des champs",
+    "lounge-coussins-lin": "Lounge aux coussins de lin sur la pelouse",
+    "lounge-coussins-verts": "Lounge blanc aux coussins verts",
+    "lounge-parasols": "Lounges et parasols blancs dans le jardin",
+    "lounge-rose-orange": "Lounge orange aux coussins rayés roses",
+    "lounge-terracotta": "Canapés terracotta et table en bois sur le terrain",
+    "table-fleurs-tropicales": "Table aux fleurs tropicales et plantes en pot",
+    "table-polaroids-grenades": "Table de grenades, courges et photos Polaroid",
+    "table-vase-vert": "Table au vase vert et aux fleurs, entre les oliviers",
+    "tables-bois-fleurs": "Longues tables en bois et fleurs roses en pot",
+    "tables-bois-guirlandes": "Tables en bois et guirlandes lumineuses dans le jardin",
+    "tables-coucher-soleil": "Longues tables et tentes tipi au coucher du soleil",
+    "tables-hautes-roses": "Tables hautes roses et tabourets de bar au coucher du soleil",
+    "tables-palmiers": "Table numérotée, bouquet blanc et grenade",
+    "tables-rondes-fleurs": "Tables rondes fleuries sous les guirlandes",
+    "tipi-lounge-dore": "Lounge sous une tente tipi, dans la lumière dorée du soir",
+    "tipi-olivier": "Tente tipi et table en bois entre les oliviers",
+    "tournesols-vase-blanc": "Tournesols dans un vase blanc",
+    "vases-tulipes": "Bouquet coloré d'anthuriums et de fleurs rouges",
+    "buffet-grenades-olivier": "Station décorée de grenades et de branches d'olivier",
+    "buffet-legumes-rotis": "Station de légumes rôtis et de patates douces",
+    "chef-brochettes-braise": "Un chef grille des brochettes sur la braise",
+    "chef-poele-pates": "Un chef sert des pâtes depuis une grande poêle",
+    "chef-station-courges": "Des chefs sur une station décorée de courges",
+    "grill-flammes": "Légumes entiers sur une flamme vive",
+    "grill-vigne": "Grill ouvert sous une vigne",
+    "installation-legumes": "Installation de légumes et de fruits suspendus",
+    "marmite-cuivre-tomates": "Marmite en cuivre et tomates le long des tables",
+    "patates-douces-grill": "Patates douces rôties sur un plateau",
+    "station-chef-poeles": "Un chef cuisine dans plusieurs poêles sur une station",
+    "station-grenades": "Station de grenades et d'assiettes en céramique",
+    "station-pates-tomates": "Station de pâtes fraîches, tomates et courges"
+  }
+}

@@ -1,0 +1,465 @@
+@import "tailwindcss";
+
+@theme {
+  /* Charte tirée du logo (prune fumé) et des photos : cannelle, sauge, olive, lin, crème, lumière dorée */
+  --color-plum: #6e5157;
+  --color-plum-deep: #563f44;
+  --color-cinnamon: #a8653f;
+  /* Cannelle assombrie pour le petit texte : 5,9:1 sur crème, 5,2:1 sur lin */
+  --color-cinnamon-ink: #8b4f2f;
+  --color-sage: #9aa58a;
+  --color-olive: #5f6446;
+  --color-linen: #efe6da;
+  --color-linen-deep: #e5d9c8;
+  --color-cream: #faf6f0;
+  /* Or clair pour les petits textes sur prune : 4,7:1 */
+  --color-gold: #e8cfa0;
+  --color-ink: #2e2522;
+  /* Brun gris pour le texte courant : 6,6:1 sur crème */
+  --color-muted: #66574f;
+  --color-line: #e0d3c1;
+
+  --font-body: var(--font-assistant), "Helvetica Neue", Arial, sans-serif;
+  --font-caps: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+  --font-accent: var(--font-cormorant), Georgia, "Times New Roman", serif;
+
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* En hébreu : Frank Ruhl Libre pour les titres et les accroches, Assistant pour le texte */
+[dir="rtl"] {
+  --font-display: var(--font-frank), "Times New Roman", serif;
+  --font-accent: var(--font-frank), "Times New Roman", serif;
+  --font-caps: var(--font-assistant), Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    color-scheme: light;
+    /* Le header fixe ne masque ni les ancres ni le champ qui reçoit le focus */
+    scroll-padding-top: 6rem;
+  }
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  [dir="rtl"] body {
+    font-weight: 400;
+  }
+  /* Grain de film très léger */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    pointer-events: none;
+    opacity: 0.07;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .43 0 0 0 0 .32 0 0 0 0 .3 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a,
+  button,
+  label,
+  select,
+  input,
+  summary {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-linen-deep);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 1px solid var(--color-cinnamon-ink);
+    outline-offset: 3px;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  /* Petites capitales très espacées (sur-titres, menu) */
+  .eyebrow {
+    font-family: var(--font-caps);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--color-cinnamon-ink);
+  }
+  [dir="rtl"] .eyebrow {
+    letter-spacing: 0.04em;
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+  /* Titres : Jost fin en capitales espacées ; Frank Ruhl Libre en hébreu */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 300;
+    line-height: 1.22;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  [dir="rtl"] .display {
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+  .display-hero {
+    font-family: var(--font-display);
+    font-weight: 300;
+    line-height: 1.12;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  [dir="rtl"] .display-hero {
+    letter-spacing: 0;
+    line-height: 1.22;
+  }
+  /* Accroches : Cormorant italique ; Frank Ruhl Libre en hébreu */
+  .accent {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  [dir="rtl"] .accent {
+    font-style: normal;
+    font-weight: 300;
+  }
+  .num {
+    font-family: var(--font-jost);
+    font-weight: 300;
+    font-variant-numeric: lining-nums tabular-nums;
+    letter-spacing: 0.22em;
+  }
+  .nav-link {
+    font-family: var(--font-caps);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+  [dir="rtl"] .nav-link {
+    letter-spacing: 0.02em;
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+  .lead {
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    color: var(--color-muted);
+  }
+  [dir="rtl"] .lead {
+    font-size: 1.125rem;
+  }
+  .btn-line,
+  .btn-solid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 3rem;
+    padding: 0.875rem 2rem;
+    font-family: var(--font-caps);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    transition:
+      background-color 0.6s var(--ease-soft),
+      color 0.6s var(--ease-soft),
+      border-color 0.6s var(--ease-soft);
+  }
+  [dir="rtl"] .btn-line,
+  [dir="rtl"] .btn-solid {
+    letter-spacing: 0.02em;
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+  .btn-line {
+    border: 1px solid currentColor;
+  }
+  .btn-line:hover {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+    color: var(--color-cream);
+  }
+  .btn-line.on-dark:hover {
+    background: var(--color-cream);
+    border-color: var(--color-cream);
+    color: var(--color-ink);
+  }
+  .btn-solid {
+    background: var(--color-plum);
+    color: var(--color-cream);
+    border: 1px solid var(--color-plum);
+  }
+  .btn-solid:hover {
+    background: var(--color-plum-deep);
+    border-color: var(--color-plum-deep);
+  }
+  .link-line {
+    background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 100% 1px;
+    padding-bottom: 0.3em;
+    transition: background-size 0.6s var(--ease-soft);
+  }
+  [dir="rtl"] .link-line {
+    background-position: 100% 100%;
+  }
+  .link-line:hover {
+    background-size: 0 1px;
+  }
+
+  .field {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--color-line);
+    background: transparent;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    color: var(--color-ink);
+    border-radius: 0;
+    transition: border-color 0.4s;
+  }
+  select.field {
+    background-color: transparent;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232e2522' stroke-width='1'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: right 0 center;
+    padding-inline-end: 1.5rem;
+  }
+  [dir="rtl"] select.field {
+    background-position: left 0 center;
+  }
+  select.field option {
+    background: var(--color-cream);
+    color: var(--color-ink);
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--color-ink);
+  }
+  .field[aria-invalid="true"] {
+    border-color: #9b3b2a;
+  }
+  .field::placeholder {
+    color: #8c7d74;
+  }
+  .label {
+    display: block;
+    font-family: var(--font-caps);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  [dir="rtl"] .label {
+    letter-spacing: 0.02em;
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--color-line);
+    min-height: 2.75rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition:
+      border-color 0.3s,
+      background-color 0.3s,
+      color 0.3s;
+  }
+  .chip:hover {
+    border-color: var(--color-ink);
+  }
+  .chip:has(input:checked) {
+    border-color: var(--color-plum);
+    background: var(--color-plum);
+    color: var(--color-cream);
+  }
+  .chip:has(input:focus-visible) {
+    outline: 1px solid var(--color-cinnamon-ink);
+    outline-offset: 3px;
+  }
+  /* Zoom très doux au survol des photos */
+  .zoom img {
+    transition: transform 1.8s var(--ease-soft);
+  }
+  .zoom:hover img,
+  .zoom:focus-visible img {
+    transform: scale(1.035);
+  }
+}
+
+/* Apparition du hero en CSS pur, sans attendre l'hydratation (le H1, élément LCP, n'est pas animé) */
+.rise {
+  animation: rise 1.6s var(--ease-soft) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+/* Très lent zoom de la photo du diptyque */
+.drift {
+  animation: drift 24s ease-in-out infinite alternate;
+}
+@keyframes drift {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+.scroll-line {
+  animation: scroll-line 2.4s var(--ease-soft) infinite;
+  transform-origin: top;
+}
+@keyframes scroll-line {
+  0% {
+    transform: scaleY(0);
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ——— Ouverture (2 s) : fond lin au grain, les trois feuilles se tracent, le nom apparaît,
+   une lumière dorée balaie l'écran, puis fondu sur le hero. Masquée avant le premier rendu si déjà vue. ——— */
+.intro-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--color-linen);
+  animation: intro-out 0.4s ease-out 1.6s forwards;
+}
+html.intro-seen .intro-curtain {
+  display: none;
+}
+@keyframes intro-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.intro-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: intro-draw 0.5s cubic-bezier(0.65, 0, 0.35, 1) var(--d) forwards;
+}
+/* Les tracés SVG ne comptent pas comme élément LCP : le nom peut partir de 0 */
+.intro-fade {
+  opacity: 0;
+  animation: intro-fade 0.5s ease-out var(--d) forwards;
+}
+@keyframes intro-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes intro-fade {
+  to {
+    opacity: 1;
+  }
+}
+.intro-light {
+  position: absolute;
+  inset: -20% -60%;
+  pointer-events: none;
+  background: linear-gradient(105deg, rgba(217, 183, 121, 0) 35%, rgba(232, 196, 130, 0.5) 48%, rgba(255, 236, 200, 0.6) 50%, rgba(217, 183, 121, 0) 63%);
+  mix-blend-mode: soft-light;
+  transform: translateX(-60%);
+  animation: intro-light 0.8s ease-in-out 0.95s forwards;
+}
+[dir="rtl"] .intro-light {
+  transform: translateX(60%) scaleX(-1);
+  animation-name: intro-light-rtl;
+}
+@keyframes intro-light {
+  to {
+    transform: translateX(60%);
+  }
+}
+@keyframes intro-light-rtl {
+  to {
+    transform: translateX(-60%) scaleX(-1);
+  }
+}
+.intro-grain {
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .32 0 0 0 0 .28 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .intro-curtain {
+    display: none;
+  }
+  .scroll-line,
+  .drift {
+    animation: none;
+  }
+}

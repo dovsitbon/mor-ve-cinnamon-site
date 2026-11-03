@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "title": "Catering y producción de bodas al aire libre en Israel | Mor & Cinnamon",
+    "description": "Mor & Cinnamon: catering de temporada y producción completa de bodas al aire libre en Israel. Bodas en la granja familiar, en huertos o en la naturaleza, del primer plan a la última copa.",
+    "legalTitle": "Condiciones y privacidad | Mor & Cinnamon",
+    "legalDescription": "Condiciones de uso del sitio de Mor & Cinnamon y política de privacidad del formulario de presupuesto."
+  },
+  "nav": {
+    "skip": "Ir al contenido",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "home": "Mor & Cinnamon, inicio",
+    "language": "Idioma",
+    "catering": "El catering",
+    "production": "La producción",
+    "weddings": "Nuestras bodas",
+    "process": "Cómo trabajamos",
+    "contact": "Contacto",
+    "checkDate": "Consultar una fecha",
+    "checkDateShort": "Tu fecha"
+  },
+  "intro": {
+    "skip": "Saltar"
+  },
+  "hero": {
+    "eyebrow": "CATERING Y PRODUCCIÓN · ISRAEL",
+    "title": "Del primer plan a la última copa",
+    "cta": "Cuéntanos tu evento",
+    "whatsapp": "WhatsApp",
+    "scroll": "Bajar al contenido"
+  },
+  "manifesto": {
+    "eyebrow": "Mor & Cinnamon",
+    "title": "Cocina local, de temporada y fresca. Un evento hecho solo para vosotros.",
+    "text": "Cocinamos con lo que da la temporada: verduras frescas, fruta madura, fuego abierto y mucha imaginación. Con el mismo cariño producimos todo lo que rodea a la comida, desde la primera mesa que se coloca en el campo hasta la última copa de la noche. Cada evento empieza con vuestra historia, por eso ninguno se parece al anterior.",
+    "link": "Lo que hacemos"
+  },
+  "pillars": {
+    "eyebrow": "Lo que hacemos",
+    "title": "La mesa, la producción y el aire libre",
+    "items": [
+      {
+        "name": "Catering",
+        "label": "Cocina de temporada",
+        "text": "Un menú escrito a vuestra medida: estaciones en vivo, platos servidos en la mesa y postres que hacen volver a por otro plato.",
+        "link": "El catering"
+      },
+      {
+        "name": "Producción",
+        "label": "Producción completa",
+        "text": "Montaje, lounges, iluminación, equipo y coordinación de todos los proveedores. Vosotros os casáis, nosotros nos ocupamos del resto.",
+        "link": "La producción"
+      },
+      {
+        "name": "Bodas al aire libre",
+        "label": "Granja, huerto, naturaleza",
+        "text": "En la granja de vuestros padres, en un huerto, en un olivar o en el paisaje de vuestra infancia. Cualquier terreno puede convertirse en una boda.",
+        "link": "Nuestras bodas"
+      }
+    ]
+  },
+  "catering": {
+    "eyebrow": "Catering de temporada",
+    "title": "Una cocina que sigue la temporada",
+    "text": "El menú se reescribe para cada evento, según la temporada, el lugar y vuestra gente. Tomates y melocotones en verano, calabazas y granadas en otoño, y siempre mucho verde, pan recién hecho y fuego.",
+    "quote": "Comida que sabe a gran cena familiar, con la puesta de sol de fondo.",
+    "menusEyebrow": "Ejemplos de menú",
+    "menusTitle": "Tres momentos de una misma noche",
+    "menusNote": "Ejemplos de eventos recientes. Cada menú se crea a medida, y la propuesta completa llega después de una primera conversación.",
+    "priceFrom": "Desde {price} por invitado",
+    "onRequest": "Precio a consultar",
+    "menuCta": "Crear vuestro menú",
+    "menus": {
+      "stations": {
+        "name": "Estaciones en vivo",
+        "text": "Los chefs cocinan delante de los invitados, al fuego y a la plancha.",
+        "dishes": [
+          "Pasta fresca con tomates de temporada",
+          "Brochetas y carnes al fuego",
+          "Verduras enteras sobre las brasas",
+          "Boniato a la parrilla",
+          "Bruschettas de tomate",
+          "Hojas de lechuga rellenas con granada"
+        ]
+      },
+      "served": {
+        "name": "Servido en la mesa",
+        "text": "Platos que llegan calientes a la mesa, generosos y sencillos, como una comida familiar.",
+        "dishes": [
+          "Carne asada en lonchas con patatas al horno",
+          "Pollo a la parrilla con cereales y verduras",
+          "Ensalada de hojas con melocotón",
+          "Ensalada de tomates de temporada",
+          "Pan recién hecho y salsas"
+        ]
+      },
+      "desserts": {
+        "name": "Postres",
+        "text": "Una mesa dulce a la que los invitados vuelven una y otra vez.",
+        "dishes": [
+          "Pavlova con nata y frutos rojos",
+          "Tarta de chocolate con nata",
+          "Torre de profiteroles",
+          "Crumble de fruta de temporada",
+          "Frutos secos y fruta deshidratada"
+        ]
+      }
+    }
+  },
+  "bleed": {
+    "eyebrow": "Boda en la granja · Einav y Davidi",
+    "title": "Nada emociona más",
+    "text": "Casarse en la granja de los padres, en el paisaje de la infancia, rodeados de toda la gente que se quiere."
+  },
+  "production": {
+    "eyebrow": "Producción de bodas al aire libre",
+    "title": "Todo lo que rodea a la comida",
+    "text": "Una boda al aire libre empieza con un terreno vacío. La construimos detalle a detalle y la llevamos hasta que el último invitado vuelve a casa.",
+    "items": [
+      {
+        "name": "Montaje",
+        "text": "Mesas, sillas, carpas y pérgolas, colocadas en el terreno según un plano preciso."
+      },
+      {
+        "name": "Lounges y decoración",
+        "text": "Rincones para sentarse, textiles, flores y vajilla, junto con los decoradores que os gustan."
+      },
+      {
+        "name": "Iluminación",
+        "text": "Guirnaldas de luces y luz cálida que alargan la puesta de sol hasta la noche."
+      },
+      {
+        "name": "Equipo",
+        "text": "Un equipo de cocina y de sala que trabaja como uno solo, con discreción y una sonrisa, de la bienvenida al postre."
+      },
+      {
+        "name": "Coordinación de proveedores",
+        "text": "Decoración, sonido, barra y fotografía: coordinamos a todos, y vosotros tenéis un único contacto."
+      },
+      {
+        "name": "Gestión del gran día",
+        "text": "Del montaje de la mañana al desmontaje, uno de nosotros está ahí para que todo pase a su hora."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "De la primera llamada a la última copa",
+    "quote": "Detrás de cada momento inolvidable hay todo un camino: los primeros montajes, los pequeños detalles y el instante en que todo se une en una sola noche.",
+    "steps": [
+      {
+        "name": "Primera llamada",
+        "text": "Nos contáis lo que imagináis: la fecha, el lugar, cuántos invitados y el ambiente."
+      },
+      {
+        "name": "Visita al lugar",
+        "text": "Nos vemos allí, revisamos el acceso, la electricidad, el agua y la sombra, y la boda empieza a tomar forma."
+      },
+      {
+        "name": "Menú y decoración",
+        "text": "Creamos juntos un menú de temporada y un plan de decoración, y coordinamos a todos los proveedores."
+      },
+      {
+        "name": "Montaje",
+        "text": "El equipo llega al terreno y lo monta todo: mobiliario, lounges, iluminación y una cocina al aire libre."
+      },
+      {
+        "name": "El gran día",
+        "text": "Vosotros os casáis. Nosotros llevamos la cocina, el servicio y los tiempos."
+      },
+      {
+        "name": "La última copa",
+        "text": "Brindamos con vosotros una última vez, y solo entonces empezamos a desmontar."
+      }
+    ]
+  },
+  "weddings": {
+    "eyebrow": "Nuestras bodas",
+    "title": "Parejas que dijeron sí al aire libre",
+    "text": "Cada boda es una historia distinta. Aquí van algunas de las más recientes.",
+    "open": "Abrir la galería de {names}",
+    "photos": "{count} fotos",
+    "with": "Con",
+    "names": {
+      "roni-itay": "Roni e Itay",
+      "hila-rotem": "Hila y Rotem",
+      "einav-davidi": "Einav y Davidi",
+      "noam-nadav": "Noam y Nadav",
+      "adi-nimi": "Adi y Nimi"
+    },
+    "notes": {
+      "roni-itay": "Una boda a todo color",
+      "hila-rotem": "Verde, blanco y girasoles",
+      "einav-davidi": "En la granja familiar",
+      "noam-nadav": "Del primer plan a la última copa",
+      "adi-nimi": "Una fiesta en plena naturaleza"
+    },
+    "roles": {
+      "production": "Producción",
+      "design": "Decoración",
+      "flowers": "Decoración y flores",
+      "equipment": "Material",
+      "tableware": "Vajilla",
+      "bar": "Barra",
+      "sound": "Sonido e iluminación",
+      "tipis": "Tiendas tipi",
+      "film": "Vídeo",
+      "photo": "Fotografía"
+    },
+    "close": "Cerrar",
+    "prev": "Foto anterior",
+    "next": "Foto siguiente",
+    "counter": "{index} de {count}"
+  },
+  "upClose": {
+    "eyebrow": "De cerca",
+    "title": "Los pequeños detalles",
+    "text": "Una granada sobre la mesa, una primera copa al atardecer, unas brasas que siguen vivas. Los pequeños momentos que hacen una noche.",
+    "open": "Ampliar la foto"
+  },
+  "partners": {
+    "eyebrow": "Colaboradores",
+    "title": "Proveedores con los que nos encanta trabajar",
+    "text": "Una buena boda es trabajo en equipo. Estas son algunas de las personas detrás de nuestros últimos eventos."
+  },
+  "reviews": {
+    "eyebrow": "Opiniones",
+    "title": "Lo que cuentan nuestras parejas",
+    "empty": "Sus historias, contadas por las propias parejas, están en las historias destacadas de nuestro Instagram.",
+    "cta": "Ver las historias destacadas"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Antes de empezar",
+    "items": [
+      {
+        "q": "¿La comida es kosher?",
+        "a": "Indicadnos en el formulario si necesitáis un evento kosher, y veremos juntos las opciones adecuadas."
+      },
+      {
+        "q": "¿Dónde trabajáis?",
+        "a": "Las bodas y los eventos en la naturaleza son nuestra casa: una granja familiar, un huerto, un olivar, un jardín privado o un terreno que todavía no habéis encontrado. ¿Seguís buscando lugar? Contádnoslo y lo pensamos juntos."
+      },
+      {
+        "q": "¿Y la electricidad, el agua y los baños en el terreno?",
+        "a": "Todo se planifica con antelación. En la visita vemos qué hay y qué hay que llevar, como un generador, agua, iluminación y baños, y coordinamos a los proveedores."
+      },
+      {
+        "q": "¿Para cuántos invitados?",
+        "a": "La cocina, el equipo y el montaje se planifican según el número de invitados. Decidnos cuántos esperáis y os enviaremos una propuesta."
+      },
+      {
+        "q": "¿Con cuánta antelación conviene escribir?",
+        "a": "En cuanto tengáis fecha, o incluso solo una temporada. En temporada alta las fechas vuelan, y una boda al aire libre también necesita tiempo de preparación."
+      },
+      {
+        "q": "¿Se puede contratar solo el catering o solo la producción?",
+        "a": "Sí: solo catering, solo producción o las dos cosas juntas. Basta con marcarlo en el formulario."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Contacto",
+    "title": "¿Preparáis una boda? Contadnos lo que imagináis",
+    "text": "Unos pocos detalles, y vuestra solicitud nos llega por WhatsApp con toda la información. Os responderemos pronto.",
+    "steps": {
+      "event": "El evento",
+      "service": "Lo que necesitáis",
+      "contact": "Cómo contactaros"
+    },
+    "fields": {
+      "eventType": "Tipo de evento",
+      "eventTypes": {
+        "wedding": "Boda",
+        "henna": "Henna",
+        "barmitzvah": "Bar / Bat Mitzvá",
+        "family": "Celebración familiar",
+        "corporate": "Evento de empresa",
+        "other": "Otro"
+      },
+      "guests": "Número de invitados",
+      "date": "Fecha estimada",
+      "dateBooked": "Esta fecha figura como ocupada en nuestra agenda. Enviad la solicitud igualmente y veremos juntos las opciones.",
+      "venue": "El lugar",
+      "venues": {
+        "have": "Tenemos lugar",
+        "search": "Seguimos buscando"
+      },
+      "venueName": "¿Dónde?",
+      "venuePlaceholder": "Nombre del lugar o del pueblo",
+      "kosher": "Kosher",
+      "kosherOptions": {
+        "kosher": "Kosher",
+        "not": "No kosher"
+      },
+      "source": "Cómo nos conocisteis",
+      "sources": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "friends": "Recomendación de amigos",
+        "event": "Estuve en uno de vuestros eventos",
+        "supplier": "A través de un proveedor o un lugar",
+        "google": "Google",
+        "other": "Otro"
+      },
+      "sourceNone": "Elegir",
+      "services": "Lo que necesitáis",
+      "serviceOptions": {
+        "catering": "Catering",
+        "production": "Producción",
+        "both": "Catering y producción"
+      },
+      "budget": "Presupuesto aproximado",
+      "budgets": [
+        "Hasta 50.000 ₪",
+        "50.000 – 100.000 ₪",
+        "100.000 – 200.000 ₪",
+        "Más de 200.000 ₪",
+        "Aún no lo sabemos"
+      ],
+      "budgetNone": "Elegir",
+      "optional": "opcional",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "message": "Contadnos lo que imagináis",
+      "messagePlaceholder": "El ambiente, los colores, la comida que os gusta, todo lo que se os ocurra"
+    },
+    "required": "Campo obligatorio",
+    "invalidPhone": "Este número no parece correcto",
+    "invalidEmail": "Este correo no parece correcto",
+    "submit": "Enviar por WhatsApp",
+    "hint": "WhatsApp se abre con el resumen de vuestra solicitud; solo queda pulsar enviar.",
+    "consent": "Vuestros datos solo se usan para responderos sobre el evento.",
+    "success": {
+      "thanks": "Gracias",
+      "title": "Vuestra solicitud está lista en WhatsApp",
+      "text": "Si WhatsApp no se ha abierto, podéis abrirlo desde aquí. Os responderemos pronto.",
+      "again": "Abrir WhatsApp",
+      "reset": "Nueva solicitud"
+    },
+    "message": {
+      "title": "Solicitud de presupuesto · Mor & Cinnamon",
+      "event": "Evento",
+      "guests": "Invitados",
+      "date": "Fecha estimada",
+      "venue": "Lugar",
+      "kosher": "Kosher",
+      "source": "Nos conocieron por",
+      "services": "Servicio",
+      "budget": "Presupuesto",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "notes": "Lo que imaginamos",
+      "ref": "N.º de solicitud",
+      "closing": "Enviado desde el sitio de Mor & Cinnamon"
+    }
+  },
+  "email": {
+    "subjectBusiness": "Nueva solicitud de presupuesto",
+    "subjectClient": "Hemos recibido vuestra solicitud · Mor & Cinnamon",
+    "intro": "¡Gracias por escribirnos! Este es el resumen de vuestra solicitud; os responderemos pronto."
+  },
+  "whatsapp": {
+    "float": "Escribir por WhatsApp",
+    "hello": "Hola, Mor & Cinnamon: hemos visto vuestra web y nos gustaría saber más para un evento."
+  },
+  "footer": {
+    "tagline": "Catering de temporada y producción de bodas al aire libre, del primer plan a la última copa.",
+    "contact": "Contacto",
+    "explore": "En el sitio",
+    "legal": "Condiciones y privacidad",
+    "rights": "Todos los derechos reservados",
+    "photos": "Fotos de los eventos de Mor & Cinnamon, de los fotógrafos citados en sus publicaciones."
+  },
+  "legal": {
+    "title": "Condiciones y privacidad",
+    "back": "Volver al inicio",
+    "sections": [
+      {
+        "title": "El sitio",
+        "text": "Este sitio presenta los servicios de catering y producción de Mor & Cinnamon. Las fotos y los vídeos se tomaron en eventos que producimos o servimos, y pertenecen a Mor & Cinnamon y a sus fotógrafos."
+      },
+      {
+        "title": "El formulario",
+        "text": "Los datos que rellenáis (nombre, teléfono, correo y detalles del evento) nos llegan por WhatsApp y, si indicáis un correo, también por correo electrónico. Solo se usan para responderos sobre el evento y no se comparten con nadie."
+      },
+      {
+        "title": "Cookies y almacenamiento",
+        "text": "El sitio no usa cookies publicitarias ni de seguimiento. Solo se guardan vuestra elección de idioma y la preferencia de no volver a mostrar la animación de apertura."
+      },
+      {
+        "title": "Contacto",
+        "text": "Para cualquier pregunta, o para pedir que borremos vuestros datos, escribidnos por WhatsApp al +972 50-536-8876."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Puede que el enlace haya cambiado. Volved al inicio para seguir desde allí.",
+    "back": "Volver al inicio"
+  },
+  "alt": {
+    "poster-panel": "Hila y Rotem caminan de la mano hacia la jupá, en un jardín a la sombra",
+    "poster-tall": "Hila y Rotem caminan de la mano hacia la jupá, en un jardín a la sombra",
+    "houppa-voilages-tapis": "Jupá con cortinas blancas y alfombras, entre árboles",
+    "voilage-olivier": "Una cortina blanca atada a un olivo antes de la ceremonia",
+    "adi-nimi": "Adi y Nimi abrazados entre sus invitados",
+    "einav-davidi-houppa": "Einav y Davidi se besan bajo la jupá",
+    "einav-davidi-olivier": "Einav y Davidi abrazados bajo una carpa, entre olivos",
+    "einav-davidi-tables": "Einav y Davidi pasan entre las mesas de la granja, bajo guirnaldas de luces",
+    "hila-rotem-houppa": "Hila y Rotem se besan bajo la jupá",
+    "hila-rotem-mains": "Las manos de Hila y Rotem, vestido de encaje y camisa blanca",
+    "hila-rotem-marche": "Hila y Rotem caminan de la mano hacia la jupá",
+    "noam-nadav": "Noam y Nadav con una niña vestida de rosa, en el jardín",
+    "roni-itay-danse": "Roni e Itay bailan al atardecer",
+    "roni-itay-lounge": "Roni e Itay se ríen en un lounge naranja",
+    "roni-itay-mariee-fleurs": "Roni, la novia, con vestido blanco entre flores naranjas",
+    "roni-itay-sourire": "Roni sonríe entre las flores",
+    "roni-mariee": "Roni con un vestido de satén blanco, en el lugar de la fiesta",
+    "assiette-boeuf-salade": "Un plato de carne asada, ensalada y tomates, sostenido en la mano",
+    "assiette-focaccia-viande": "Un plato con pan, carne deshilachada, hierbas y crema",
+    "assiettes-poulet-haricots": "Platos de pollo, judías verdes y cereales",
+    "barquettes-laitue-grenade": "Hojas de lechuga rellenas junto a granadas",
+    "barquettes-salade": "Una bandeja de bocados verdes servida en el jardín",
+    "boeuf-pommes-de-terre": "Carne asada en lonchas con patatas al horno",
+    "boeuf-tranche": "Un chef corta carne en la plancha",
+    "bouchees-piment": "Pequeños bocados con guindilla sobre una tabla de madera",
+    "bruschettas-tomates": "Bruschettas de tomate en una bandeja",
+    "chef-dressage": "Un chef sirve un plato desde una sartén grande",
+    "choux-presentoir": "Profiteroles en una torre",
+    "cocotte-brioche": "Una olla de guiso y brioche trenzado en una estación",
+    "crostinis-planche": "Crostinis sobre una tabla de servir",
+    "desserts-assiettes": "Platos de postre con crumble y fruta",
+    "entrees-plateau-argent": "Una bandeja de plata con pequeños entrantes",
+    "gateau-chocolat-creme": "Una porción de tarta de chocolate con nata",
+    "meringue-coulis": "Un cuenco de merengue, salsa de frutos rojos y platos de postre",
+    "pates-legumes-grilles": "Pasta y verduras a la parrilla en platos blancos",
+    "pavlova-fruits-rouges": "Pavlova con nata y salsa de frutos rojos",
+    "poulet-grille-boulgour": "Pollo a la parrilla con cereales en platos festoneados",
+    "salade-peches": "Ensalada de hojas con melocotón en un cuenco blanco",
+    "dressage-assiettes": "Una camarera emplata sobre una pila de platos",
+    "dressage-haricots": "Platos con judías verdes y cereales en una estación",
+    "equipe-buffet": "Sirviendo un cóctel junto a una caja de naranjas",
+    "fleuriste-hortensias": "Una florista prepara un ramo blanco",
+    "mise-en-place-bougies": "Colocando velas y mesas antes del evento",
+    "montage-tipis": "El equipo monta tiendas tipi en la granja",
+    "service-assiette": "Una camarera emplata en una estación",
+    "service-desserts": "Sirviendo fruta deshidratada de un cuenco de madera",
+    "service-salades-tomates": "Fuentes de ensalada de tomate sobre la mesa",
+    "vase-blanc-mains": "Un jarrón blanco sobre un tocón",
+    "champagne-grenades": "Botellas de champán en una cubitera y granadas",
+    "invites-desserts": "Invitadas probando los postres",
+    "invites-lounge": "Invitados comiendo en un lounge",
+    "spritz-bar": "Copas de spritz en la barra al atardecer",
+    "verres-alignes": "Filas de copas de vino antes del evento",
+    "vue-aerienne-tables": "Vista desde arriba de mesas y lounges",
+    "vue-aerienne": "Vista aérea de la fiesta entre los campos",
+    "lounge-coussins-lin": "Un lounge con cojines de lino sobre el césped",
+    "lounge-coussins-verts": "Un lounge blanco con cojines verdes",
+    "lounge-parasols": "Lounges y sombrillas blancas en el jardín",
+    "lounge-rose-orange": "Un lounge naranja con cojines de rayas rosas",
+    "lounge-terracotta": "Sofás terracota y una mesa de madera en el terreno",
+    "table-fleurs-tropicales": "Una mesa con flores tropicales y macetas",
+    "table-polaroids-grenades": "Una mesa con granadas, calabazas y fotos Polaroid",
+    "table-vase-vert": "Una mesa con un jarrón verde y flores, entre olivos",
+    "tables-bois-fleurs": "Largas mesas de madera con macetas de flores rosas",
+    "tables-bois-guirlandes": "Mesas de madera y guirnaldas de luces en el jardín",
+    "tables-coucher-soleil": "Largas mesas y tiendas tipi al atardecer",
+    "tables-hautes-roses": "Mesas altas rosas y taburetes al atardecer",
+    "tables-palmiers": "Una mesa numerada con un ramo blanco y una granada",
+    "tables-rondes-fleurs": "Mesas redondas con flores bajo guirnaldas de luces",
+    "tipi-lounge-dore": "Un lounge bajo una tienda tipi, con la luz dorada de la tarde",
+    "tipi-olivier": "Una tienda tipi y una mesa de madera entre olivos",
+    "tournesols-vase-blanc": "Girasoles en un jarrón blanco",
+    "vases-tulipes": "Un ramo colorido con anturios y flores rojas",
+    "buffet-grenades-olivier": "Una estación con granadas y ramas de olivo",
+    "buffet-legumes-rotis": "Una estación de verduras asadas y boniatos",
+    "chef-brochettes-braise": "Un chef asa brochetas sobre las brasas",
+    "chef-poele-pates": "Un chef sirve pasta desde una sartén grande",
+    "chef-station-courges": "Chefs en una estación decorada con calabazas",
+    "grill-flammes": "Verduras enteras sobre la llama",
+    "grill-vigne": "Una parrilla abierta bajo una parra",
+    "installation-legumes": "Una instalación de verduras y frutas colgadas",
+    "marmite-cuivre-tomates": "Una olla de cobre y tomates junto a las mesas",
+    "patates-douces-grill": "Boniatos asados en una bandeja",
+    "station-chef-poeles": "Un chef cocina en varias sartenes en una estación",
+    "station-grenades": "Una estación con granadas y platos de cerámica",
+    "station-pates-tomates": "Una estación de pasta fresca con tomates y calabazas"
+  }
+}

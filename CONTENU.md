@@ -1,0 +1,1848 @@
+# MOR & CINNAMON (מור וקינמון) — contenu du site à valider
+
+Site : https://mor-ve-cinnamon.vercel.app (hébreu /he par défaut, /en, /fr, /es). Les textes se modifient dans `locales/he.json`, `en.json`, `fr.json`, `es.json` ; ce fichier est régénéré par `npm run contenu`.
+
+## Infos à demander à Mor & Cinnamon
+
+1. **Les fondateurs** : prénom(s), photo et leur histoire (comment est né « מור וקינמון »). Le site n'en parle pas tant que ce n'est pas fourni.
+2. **Exemples de menus réels** (stations, plats servis, desserts) : les trois menus du site reprennent les plats visibles sur Instagram → à corriger ou compléter dans `locales/*.json` (`catering.menus`).
+3. **Prix ou fourchettes** « à partir de » par invité → `data/menus.json` (`priceFrom`). Tant qu'ils sont vides, le site affiche « מחיר בהצעה אישית ».
+4. **Zone d'intervention** (régions, distance maximale) : non indiquée sur le site, la FAQ reste générale.
+5. **Casher** : oui, sur demande, avec quelle supervision (כשרות) ? La FAQ répond aujourd'hui « dites-le-nous dans le formulaire ».
+6. **Vrais avis de couples** (texte, prénoms, accord pour publication) → `data/reviews.json` avec `published: true`. Aucun avis n'est inventé : la section renvoie pour l'instant vers les stories à la une.
+7. **Vidéos en bonne qualité** (fichiers originaux, si possible un plan horizontal pour le hero) : le hero utilise le reel de Hila & Rotem en 1080 × 1920.
+8. **Accord des partenaires** cités (section « שותפים ») et **accord des couples** pour publier leurs photos et prénoms.
+9. **Couples des stories à la une** (Yael & Eshel, Shahar & Alon, Noam & Hanan, Adi & Assaf, Lihi & Yonatan, Alin & Assaf, Neta & Ron, Or & Itay, Dafni & Alon) : leurs photos et dates. Instagram ne montre pas les stories sans connexion, seuls 5 couples ont pu être illustrés.
+10. **Les 150 visuels du profil** : seul le logo était dans Téléchargements ; les 12 publications publiques (+ 1 collaboration) ont été récupérées. Les autres publications sont à fournir pour enrichir les galeries.
+11. **Lien de la page Facebook** « מור וקינמון - קייטרינג והפקה » (introuvable publiquement) → `data/site.json` (`facebook`). Le footer l'affichera automatiquement.
+12. **E-mail** qui recevra les demandes (variable `QUOTE_NOTIFY_EMAIL`), et un domaine vérifié dans Resend pour l'expéditeur (`RESEND_FROM`) ; nom de domaine du site si souhaité.
+13. **Dates déjà prises** à signaler dans le formulaire → `data/dates.json`.
+14. **Mentions** : raison sociale, numéro d'entreprise (ע.מ / ח.פ), adresse ou ville, e-mail.
+15. À confirmer : électricité, eau et sanitaires sur place (réponse de la FAQ), nombre d'invités minimum ou maximum, délai de réservation conseillé.
+
+## Menus (data/menus.json)
+
+- **עמדות חיות** (Stations vivantes) — prix à fournir (affiché « sur devis ») — Pâtes fraîches aux tomates de saison, Brochettes et viandes au feu de bois, Légumes entiers sur la braise, Patate douce grillée, Bruschettas à la tomate, Feuilles de laitue garnies et grenade
+- **מנות לשולחן** (Servi à table) — prix à fournir (affiché « sur devis ») — Rôti de bœuf tranché et pommes de terre au four, Poulet grillé, céréales et légumes verts, Salade de feuilles aux pêches, Salade de tomates de saison, Pain frais et condiments
+- **קינוחים** (Desserts) — prix à fournir (affiché « sur devis ») — Pavlova, crème et fruits rouges, Gâteau au chocolat et crème, Pièce montée de choux, Crumble aux fruits de saison, Fruits secs et noix
+
+## Mariages présentés (data/weddings.json)
+
+- **רוני ואיתי** (Roni & Itay) — 2026-10-09 — 16 photos — avec Production @makers.events, Vidéo @niv_shaul_films
+- **הילה ורותם** (Hila & Rotem) — 11 photos — avec Décoration @amare_by_sap, Photo @absstudio.social
+- **עינב ודוידי** (Einav & Davidi) — 12 photos — avec Décoration et fleurs @sentimental_events_flowers, Matériel @ofir_events, Son et lumière @etl_producions, Bar @julio.cocktails, Vaisselle @gilmuskal, Tentes tipi @icamp.israel
+- **נעם ונדב** (Noam & Nadav) — 13 photos
+- **עדי ונימי** (Adi & Nimi) — 3 photos — avec Production @nesher_shachor
+
+## Partenaires affichés (data/partners.json, à valider)
+
+- @amare_by_sap — Décoration
+- @sentimental_events_flowers — Décoration et fleurs
+- @makers.events — Production
+- @ofir_events — Matériel
+- @caesarevents — Matériel
+- @gilmuskal — Vaisselle
+- @julio.cocktails — Bar
+- @etl_producions — Son et lumière
+- @icamp.israel — Tentes tipi
+- @niv_shaul_films — Vidéo
+- @absstudio.social — Photo
+
+## Textes du site (HE / EN / FR / ES)
+
+
+### meta
+
+- `meta.title`
+  - HE : קייטרינג והפקת חתונות שטח | מור וקינמון
+  - EN : Outdoor Wedding Catering & Production in Israel | Mor & Cinnamon
+  - FR : Traiteur et production de mariages en plein air en Israël | Mor & Cinnamon
+  - ES : Catering y producción de bodas al aire libre en Israel | Mor & Cinnamon
+- `meta.description`
+  - HE : מור וקינמון: קייטרינג עונתי והפקת חתונות שטח בהתאמה אישית. חתונה במשק, במטע או בטבע, מהתכנון הראשון ועד הדרינק האחרון. בדקו תאריך בוואטסאפ.
+  - EN : Mor & Cinnamon: seasonal catering and full production for outdoor weddings in Israel. Weddings on the family farm, in orchards or in nature, from the first plan to the last drink.
+  - FR : Mor & Cinnamon : traiteur de saison et production complète de mariages en plein air en Israël. Mariages dans la ferme familiale, les vergers ou la nature, du premier plan au dernier verre.
+  - ES : Mor & Cinnamon: catering de temporada y producción completa de bodas al aire libre en Israel. Bodas en la granja familiar, en huertos o en la naturaleza, del primer plan a la última copa.
+- `meta.legalTitle`
+  - HE : תנאי שימוש ופרטיות | מור וקינמון
+  - EN : Terms & Privacy | Mor & Cinnamon
+  - FR : Conditions et confidentialité | Mor & Cinnamon
+  - ES : Condiciones y privacidad | Mor & Cinnamon
+- `meta.legalDescription`
+  - HE : תנאי השימוש באתר מור וקינמון ומדיניות הפרטיות של טופס הבקשה להצעת מחיר.
+  - EN : Terms of use of the Mor & Cinnamon website and privacy policy for the quote request form.
+  - FR : Conditions d'utilisation du site Mor & Cinnamon et politique de confidentialité du formulaire de devis.
+  - ES : Condiciones de uso del sitio de Mor & Cinnamon y política de privacidad del formulario de presupuesto.
+
+### nav
+
+- `nav.skip`
+  - HE : דילוג לתוכן
+  - EN : Skip to content
+  - FR : Aller au contenu
+  - ES : Ir al contenido
+- `nav.menu`
+  - HE : תפריט
+  - EN : Menu
+  - FR : Menu
+  - ES : Menú
+- `nav.close`
+  - HE : סגירה
+  - EN : Close
+  - FR : Fermer
+  - ES : Cerrar
+- `nav.home`
+  - HE : מור וקינמון, לדף הבית
+  - EN : Mor & Cinnamon, home
+  - FR : Mor & Cinnamon, accueil
+  - ES : Mor & Cinnamon, inicio
+- `nav.language`
+  - HE : שפה
+  - EN : Language
+  - FR : Langue
+  - ES : Idioma
+- `nav.catering`
+  - HE : הקייטרינג
+  - EN : Catering
+  - FR : Le traiteur
+  - ES : El catering
+- `nav.production`
+  - HE : ההפקה
+  - EN : Production
+  - FR : La production
+  - ES : La producción
+- `nav.weddings`
+  - HE : החתונות שלנו
+  - EN : Our weddings
+  - FR : Nos mariages
+  - ES : Nuestras bodas
+- `nav.process`
+  - HE : איך זה עובד
+  - EN : How it works
+  - FR : Comment ça marche
+  - ES : Cómo trabajamos
+- `nav.contact`
+  - HE : צור קשר
+  - EN : Contact
+  - FR : Contact
+  - ES : Contacto
+- `nav.checkDate`
+  - HE : בדיקת תאריך
+  - EN : Check a date
+  - FR : Vérifier une date
+  - ES : Consultar una fecha
+- `nav.checkDateShort`
+  - HE : בדיקת תאריך
+  - EN : Your date
+  - FR : Votre date
+  - ES : Tu fecha
+
+### intro
+
+- `intro.skip`
+  - HE : דלג
+  - EN : Skip
+  - FR : Passer
+  - ES : Saltar
+
+### hero
+
+- `hero.eyebrow`
+  - HE : CATERING & PRODUCTION · ISRAEL
+  - EN : CATERING & PRODUCTION · ISRAEL
+  - FR : TRAITEUR & PRODUCTION · ISRAËL
+  - ES : CATERING Y PRODUCCIÓN · ISRAEL
+- `hero.title`
+  - HE : מהתכנון הראשון ועד הדרינק האחרון
+  - EN : From the first plan to the last drink
+  - FR : Du premier plan au dernier verre
+  - ES : Del primer plan a la última copa
+- `hero.cta`
+  - HE : ספרו לנו על האירוע
+  - EN : Tell us about your event
+  - FR : Racontez-nous votre événement
+  - ES : Cuéntanos tu evento
+- `hero.whatsapp`
+  - HE : וואטסאפ
+  - EN : WhatsApp
+  - FR : WhatsApp
+  - ES : WhatsApp
+- `hero.scroll`
+  - HE : גלילה לתוכן
+  - EN : Scroll to content
+  - FR : Descendre vers le contenu
+  - ES : Bajar al contenido
+
+### manifesto
+
+- `manifesto.eyebrow`
+  - HE : מור וקינמון
+  - EN : Mor & Cinnamon
+  - FR : Mor & Cinnamon
+  - ES : Mor & Cinnamon
+- `manifesto.title`
+  - HE : אוכל מקומי, עונתי וטרי. אירוע שנבנה רק בשבילכם.
+  - EN : Local, seasonal, fresh food. An event made only for you.
+  - FR : Une cuisine locale, de saison et fraîche. Un événement fait pour vous seuls.
+  - ES : Cocina local, de temporada y fresca. Un evento hecho solo para vosotros.
+- `manifesto.text`
+  - HE : אנחנו מבשלים ממה שהעונה נותנת: ירקות טריים, פירות בשלים, אש פתוחה והרבה יצירתיות. ובאותה אהבה אנחנו מפיקים את כל מה שמסביב, מהשולחן הראשון שמוצב בשטח ועד הכוס האחרונה בסוף הלילה. כל אירוע מתחיל מהסיפור שלכם, ולכן אף אירוע לא דומה לקודם.
+  - EN : We cook with what the season gives: fresh vegetables, ripe fruit, open fire and plenty of imagination. With the same care, we produce everything around the food, from the first table set up in the field to the last glass at the end of the night. Every event starts with your story, which is why no two of ours look alike.
+  - FR : Nous cuisinons ce que la saison nous donne : légumes frais, fruits mûrs, feu de bois et beaucoup d'imagination. Avec le même soin, nous produisons tout ce qui entoure l'assiette, de la première table posée dans le champ au dernier verre de la nuit. Chaque événement part de votre histoire, c'est pourquoi aucun ne ressemble au précédent.
+  - ES : Cocinamos con lo que da la temporada: verduras frescas, fruta madura, fuego abierto y mucha imaginación. Con el mismo cariño producimos todo lo que rodea a la comida, desde la primera mesa que se coloca en el campo hasta la última copa de la noche. Cada evento empieza con vuestra historia, por eso ninguno se parece al anterior.
+- `manifesto.link`
+  - HE : מה אנחנו עושים
+  - EN : What we do
+  - FR : Ce que nous faisons
+  - ES : Lo que hacemos
+
+### pillars
+
+- `pillars.eyebrow`
+  - HE : מה אנחנו עושים
+  - EN : What we do
+  - FR : Ce que nous faisons
+  - ES : Lo que hacemos
+- `pillars.title`
+  - HE : אוכל, הפקה ושטח פתוח
+  - EN : Food, production and open fields
+  - FR : La table, la production, le plein air
+  - ES : La mesa, la producción y el aire libre
+- `pillars.items.0.name`
+  - HE : קייטרינג
+  - EN : Catering
+  - FR : Traiteur
+  - ES : Catering
+- `pillars.items.0.label`
+  - HE : מטבח עונתי
+  - EN : A seasonal kitchen
+  - FR : Une cuisine de saison
+  - ES : Cocina de temporada
+- `pillars.items.0.text`
+  - HE : תפריט שנכתב סביבכם: עמדות חיות, מנות שמגיעות לשולחן וקינוחים שגורמים לחזור לעוד צלחת.
+  - EN : A menu written around you: live stations, dishes served to the table and desserts that send guests back for another plate.
+  - FR : Un menu écrit autour de vous : stations vivantes, plats servis à table et desserts qui font revenir pour une deuxième assiette.
+  - ES : Un menú escrito a vuestra medida: estaciones en vivo, platos servidos en la mesa y postres que hacen volver a por otro plato.
+- `pillars.items.0.link`
+  - HE : לקייטרינג
+  - EN : Catering
+  - FR : Le traiteur
+  - ES : El catering
+- `pillars.items.1.name`
+  - HE : הפקה
+  - EN : Production
+  - FR : Production
+  - ES : Producción
+- `pillars.items.1.label`
+  - HE : הפקה מלאה
+  - EN : Full production
+  - FR : Production complète
+  - ES : Producción completa
+- `pillars.items.1.text`
+  - HE : הקמה, לאונג'ים, תאורה, צוות ותיאום כל הספקים. אתם מתחתנים, אנחנו דואגים לכל השאר.
+  - EN : Setup, lounges, lighting, staff and every supplier coordinated. You get married, we take care of the rest.
+  - FR : Montage, lounges, éclairage, équipe et coordination de tous les prestataires. Vous vous mariez, nous nous occupons du reste.
+  - ES : Montaje, lounges, iluminación, equipo y coordinación de todos los proveedores. Vosotros os casáis, nosotros nos ocupamos del resto.
+- `pillars.items.1.link`
+  - HE : להפקה
+  - EN : Production
+  - FR : La production
+  - ES : La producción
+- `pillars.items.2.name`
+  - HE : חתונות שטח
+  - EN : Outdoor weddings
+  - FR : Mariages en plein air
+  - ES : Bodas al aire libre
+- `pillars.items.2.label`
+  - HE : במשק, במטע, בטבע
+  - EN : Farms, orchards, nature
+  - FR : Ferme, verger, nature
+  - ES : Granja, huerto, naturaleza
+- `pillars.items.2.text`
+  - HE : במשק של ההורים, במטע, בחורשה או בנוף הילדות שלכם. כל שטח פתוח יכול להפוך לחתונה.
+  - EN : On your parents' farm, in an orchard, in a grove or in the landscape you grew up in. Any open field can become a wedding.
+  - FR : Dans la ferme de vos parents, dans un verger, une oliveraie ou le paysage de votre enfance. Chaque terrain peut devenir un mariage.
+  - ES : En la granja de vuestros padres, en un huerto, en un olivar o en el paisaje de vuestra infancia. Cualquier terreno puede convertirse en una boda.
+- `pillars.items.2.link`
+  - HE : לחתונות שלנו
+  - EN : Our weddings
+  - FR : Nos mariages
+  - ES : Nuestras bodas
+
+### catering
+
+- `catering.eyebrow`
+  - HE : קייטרינג עונתי
+  - EN : Seasonal catering
+  - FR : Traiteur de saison
+  - ES : Catering de temporada
+- `catering.title`
+  - HE : מטבח של עונה
+  - EN : A kitchen that follows the season
+  - FR : Une cuisine qui suit la saison
+  - ES : Una cocina que sigue la temporada
+- `catering.text`
+  - HE : התפריט נכתב מחדש לכל אירוע, לפי העונה, המקום והאנשים שלכם. עגבניות ואפרסקים בקיץ, דלעות ורימונים בסתיו, ותמיד הרבה ירוק, לחם טרי ואש.
+  - EN : The menu is rewritten for every event, according to the season, the place and your people. Tomatoes and peaches in summer, squash and pomegranates in autumn, and always plenty of greens, fresh bread and fire.
+  - FR : Le menu est réécrit pour chaque événement, selon la saison, le lieu et vos invités. Tomates et pêches en été, courges et grenades à l'automne, et toujours beaucoup de vert, du pain frais et du feu.
+  - ES : El menú se reescribe para cada evento, según la temporada, el lugar y vuestra gente. Tomates y melocotones en verano, calabazas y granadas en otoño, y siempre mucho verde, pan recién hecho y fuego.
+- `catering.quote`
+  - HE : אוכל שמרגיש כמו ארוחה גדולה בבית, רק עם השקיעה ברקע.
+  - EN : Food that feels like a big family dinner, with the sunset in the background.
+  - FR : Une cuisine qui ressemble à un grand dîner de famille, avec le coucher de soleil en toile de fond.
+  - ES : Comida que sabe a gran cena familiar, con la puesta de sol de fondo.
+- `catering.menusEyebrow`
+  - HE : דוגמאות לתפריט
+  - EN : Sample menus
+  - FR : Exemples de menus
+  - ES : Ejemplos de menú
+- `catering.menusTitle`
+  - HE : שלושה רגעים של ערב אחד
+  - EN : Three moments of one evening
+  - FR : Trois moments d'une même soirée
+  - ES : Tres momentos de una misma noche
+- `catering.menusNote`
+  - HE : דוגמאות מאירועים אחרונים. כל תפריט נבנה מחדש, וההצעה המלאה נשלחת אחרי שיחת היכרות.
+  - EN : Examples from recent events. Every menu is built from scratch, and the full proposal follows a first conversation.
+  - FR : Exemples tirés d'événements récents. Chaque menu est construit sur mesure ; la proposition complète suit un premier échange.
+  - ES : Ejemplos de eventos recientes. Cada menú se crea a medida, y la propuesta completa llega después de una primera conversación.
+- `catering.priceFrom`
+  - HE : החל מ־{price} לאורח
+  - EN : From {price} per guest
+  - FR : À partir de {price} par invité
+  - ES : Desde {price} por invitado
+- `catering.onRequest`
+  - HE : מחיר בהצעה אישית
+  - EN : Priced on request
+  - FR : Prix sur devis
+  - ES : Precio a consultar
+- `catering.menuCta`
+  - HE : לבניית תפריט
+  - EN : Build your menu
+  - FR : Composer votre menu
+  - ES : Crear vuestro menú
+- `catering.menus.stations.name`
+  - HE : עמדות חיות
+  - EN : Live stations
+  - FR : Stations vivantes
+  - ES : Estaciones en vivo
+- `catering.menus.stations.text`
+  - HE : השפים מבשלים מול האורחים, על אש פתוחה ועל הפלנצ'ה.
+  - EN : The chefs cook in front of your guests, over open fire and on the plancha.
+  - FR : Les chefs cuisinent devant vos invités, au feu de bois et à la plancha.
+  - ES : Los chefs cocinan delante de los invitados, al fuego y a la plancha.
+- `catering.menus.stations.dishes.0`
+  - HE : פסטה טרייה עם עגבניות העונה
+  - EN : Fresh pasta with seasonal tomatoes
+  - FR : Pâtes fraîches aux tomates de saison
+  - ES : Pasta fresca con tomates de temporada
+- `catering.menus.stations.dishes.1`
+  - HE : שיפודים ובשרים על האש
+  - EN : Skewers and meats over the fire
+  - FR : Brochettes et viandes au feu de bois
+  - ES : Brochetas y carnes al fuego
+- `catering.menus.stations.dishes.2`
+  - HE : ירקות שלמים על הגחלים
+  - EN : Whole vegetables on the embers
+  - FR : Légumes entiers sur la braise
+  - ES : Verduras enteras sobre las brasas
+- `catering.menus.stations.dishes.3`
+  - HE : בטטה צלויה על הגריל
+  - EN : Grilled sweet potato
+  - FR : Patate douce grillée
+  - ES : Boniato a la parrilla
+- `catering.menus.stations.dishes.4`
+  - HE : ברוסקטות עגבניות
+  - EN : Tomato bruschetta
+  - FR : Bruschettas à la tomate
+  - ES : Bruschettas de tomate
+- `catering.menus.stations.dishes.5`
+  - HE : סירות חסה עם רימון
+  - EN : Lettuce cups with pomegranate
+  - FR : Feuilles de laitue garnies et grenade
+  - ES : Hojas de lechuga rellenas con granada
+- `catering.menus.served.name`
+  - HE : מנות לשולחן
+  - EN : Served to the table
+  - FR : Servi à table
+  - ES : Servido en la mesa
+- `catering.menus.served.text`
+  - HE : מנות שמגיעות חמות לשולחן, נדיבות ופשוטות, כמו בארוחה משפחתית.
+  - EN : Dishes that arrive hot at the table, generous and simple, like a family meal.
+  - FR : Des plats qui arrivent chauds à table, généreux et simples, comme un repas de famille.
+  - ES : Platos que llegan calientes a la mesa, generosos y sencillos, como una comida familiar.
+- `catering.menus.served.dishes.0`
+  - HE : בשר צלוי פרוס עם תפוחי אדמה מהתנור
+  - EN : Sliced roast beef with oven potatoes
+  - FR : Rôti de bœuf tranché et pommes de terre au four
+  - ES : Carne asada en lonchas con patatas al horno
+- `catering.menus.served.dishes.1`
+  - HE : עוף על הגריל עם דגנים וירוקים
+  - EN : Grilled chicken with grains and greens
+  - FR : Poulet grillé, céréales et légumes verts
+  - ES : Pollo a la parrilla con cereales y verduras
+- `catering.menus.served.dishes.2`
+  - HE : סלט עלים עם אפרסקים
+  - EN : Leaf salad with peaches
+  - FR : Salade de feuilles aux pêches
+  - ES : Ensalada de hojas con melocotón
+- `catering.menus.served.dishes.3`
+  - HE : סלט עגבניות העונה
+  - EN : Seasonal tomato salad
+  - FR : Salade de tomates de saison
+  - ES : Ensalada de tomates de temporada
+- `catering.menus.served.dishes.4`
+  - HE : לחם טרי ומטבלים
+  - EN : Fresh bread and dips
+  - FR : Pain frais et condiments
+  - ES : Pan recién hecho y salsas
+- `catering.menus.desserts.name`
+  - HE : קינוחים
+  - EN : Desserts
+  - FR : Desserts
+  - ES : Postres
+- `catering.menus.desserts.text`
+  - HE : שולחן מתוק שהאורחים חוזרים אליו שוב ושוב.
+  - EN : A sweet table guests keep coming back to.
+  - FR : Une table sucrée vers laquelle on revient sans cesse.
+  - ES : Una mesa dulce a la que los invitados vuelven una y otra vez.
+- `catering.menus.desserts.dishes.0`
+  - HE : פבלובה עם קרם ופירות יער
+  - EN : Pavlova with cream and berries
+  - FR : Pavlova, crème et fruits rouges
+  - ES : Pavlova con nata y frutos rojos
+- `catering.menus.desserts.dishes.1`
+  - HE : עוגת שוקולד עם קרם
+  - EN : Chocolate cake with cream
+  - FR : Gâteau au chocolat et crème
+  - ES : Tarta de chocolate con nata
+- `catering.menus.desserts.dishes.2`
+  - HE : פחזניות במגדל
+  - EN : Choux tower
+  - FR : Pièce montée de choux
+  - ES : Torre de profiteroles
+- `catering.menus.desserts.dishes.3`
+  - HE : קרמבל ופירות העונה
+  - EN : Crumble with seasonal fruit
+  - FR : Crumble aux fruits de saison
+  - ES : Crumble de fruta de temporada
+- `catering.menus.desserts.dishes.4`
+  - HE : פירות מיובשים ואגוזים
+  - EN : Dried fruit and nuts
+  - FR : Fruits secs et noix
+  - ES : Frutos secos y fruta deshidratada
+
+### bleed
+
+- `bleed.eyebrow`
+  - HE : חתונה במשק · עינב ודוידי
+  - EN : A farm wedding · Einav & Davidi
+  - FR : Mariage à la ferme · Einav & Davidi
+  - ES : Boda en la granja · Einav y Davidi
+- `bleed.title`
+  - HE : אין מרגש מזה
+  - EN : Nothing moves you more
+  - FR : Rien de plus émouvant
+  - ES : Nada emociona más
+- `bleed.text`
+  - HE : להתחתן במשק של ההורים, בנוף שבו גדלתם, עם כל מי שאתם אוהבים סביבכם.
+  - EN : Getting married on your parents' farm, in the landscape you grew up in, with everyone you love around you.
+  - FR : Se marier dans la ferme de ses parents, dans le paysage de son enfance, entouré de tous ceux qu'on aime.
+  - ES : Casarse en la granja de los padres, en el paisaje de la infancia, rodeados de toda la gente que se quiere.
+
+### production
+
+- `production.eyebrow`
+  - HE : הפקת חתונות שטח
+  - EN : Outdoor wedding production
+  - FR : Production de mariages en plein air
+  - ES : Producción de bodas al aire libre
+- `production.title`
+  - HE : כל מה שמסביב לאוכל
+  - EN : Everything around the food
+  - FR : Tout ce qui entoure l'assiette
+  - ES : Todo lo que rodea a la comida
+- `production.text`
+  - HE : חתונת שטח מתחילה בשטח ריק. אנחנו בונים אותה פרט אחרי פרט, ומנהלים אותה עד שהאורח האחרון הולך הביתה.
+  - EN : An outdoor wedding starts with an empty field. We build it detail by detail, and run it until the last guest heads home.
+  - FR : Un mariage en plein air commence par un terrain vide. Nous le construisons détail après détail, et nous le menons jusqu'au départ du dernier invité.
+  - ES : Una boda al aire libre empieza con un terreno vacío. La construimos detalle a detalle y la llevamos hasta que el último invitado vuelve a casa.
+- `production.items.0.name`
+  - HE : הקמה
+  - EN : Setup
+  - FR : Montage
+  - ES : Montaje
+- `production.items.0.text`
+  - HE : שולחנות, כיסאות, אוהלים ופרגולות, מוצבים בשטח לפי תוכנית מדויקת.
+  - EN : Tables, chairs, tents and pergolas, placed in the field according to a precise plan.
+  - FR : Tables, chaises, tentes et pergolas, installées sur le terrain selon un plan précis.
+  - ES : Mesas, sillas, carpas y pérgolas, colocadas en el terreno según un plano preciso.
+- `production.items.1.name`
+  - HE : לאונג'ים ועיצוב
+  - EN : Lounges & styling
+  - FR : Lounges et décoration
+  - ES : Lounges y decoración
+- `production.items.1.text`
+  - HE : פינות ישיבה רכות, טקסטיל, פרחים וכלים, יחד עם המעצבים שאתם אוהבים.
+  - EN : Soft seating corners, textiles, flowers and tableware, together with the designers you love.
+  - FR : Coins salon, textiles, fleurs et vaisselle, avec les décorateurs que vous aimez.
+  - ES : Rincones para sentarse, textiles, flores y vajilla, junto con los decoradores que os gustan.
+- `production.items.2.name`
+  - HE : תאורה
+  - EN : Lighting
+  - FR : Éclairage
+  - ES : Iluminación
+- `production.items.2.text`
+  - HE : שרשראות אור ותאורה חמה שממשיכות את השקיעה אל תוך הלילה.
+  - EN : String lights and warm lighting that carry the sunset into the night.
+  - FR : Guirlandes lumineuses et lumière chaude qui prolongent le coucher de soleil dans la nuit.
+  - ES : Guirnaldas de luces y luz cálida que alargan la puesta de sol hasta la noche.
+- `production.items.3.name`
+  - HE : צוות
+  - EN : Staff
+  - FR : Équipe
+  - ES : Equipo
+- `production.items.3.text`
+  - HE : צוות מטבח ושירות שעובד יחד, בשקט ובחיוך, מהקבלת פנים ועד הקינוח.
+  - EN : Kitchen and service staff working as one, quietly and with a smile, from the welcome drink to dessert.
+  - FR : Une équipe de cuisine et de service qui travaille d'un seul geste, discrètement et avec le sourire, de l'accueil au dessert.
+  - ES : Un equipo de cocina y de sala que trabaja como uno solo, con discreción y una sonrisa, de la bienvenida al postre.
+- `production.items.4.name`
+  - HE : תיאום ספקים
+  - EN : Supplier coordination
+  - FR : Coordination des prestataires
+  - ES : Coordinación de proveedores
+- `production.items.4.text`
+  - HE : עיצוב, הגברה, בר וצילום: אנחנו מתאמים את כולם, ולכם יש כתובת אחת.
+  - EN : Design, sound, bar and photography: we coordinate them all, so you have a single contact.
+  - FR : Décoration, son, bar, photo : nous coordonnons tout le monde, vous n'avez qu'un seul interlocuteur.
+  - ES : Decoración, sonido, barra y fotografía: coordinamos a todos, y vosotros tenéis un único contacto.
+- `production.items.5.name`
+  - HE : ניהול היום עצמו
+  - EN : Running the day
+  - FR : Gestion du jour J
+  - ES : Gestión del gran día
+- `production.items.5.text`
+  - HE : מההקמה בבוקר ועד הפירוק, מישהו מאיתנו שם ודואג שהכול יקרה בזמן.
+  - EN : From the morning setup to the teardown, one of us is there making sure everything happens on time.
+  - FR : Du montage du matin au démontage, l'un de nous est là pour que tout arrive à l'heure.
+  - ES : Del montaje de la mañana al desmontaje, uno de nosotros está ahí para que todo pase a su hora.
+
+### process
+
+- `process.eyebrow`
+  - HE : איך זה עובד
+  - EN : How it works
+  - FR : Comment ça marche
+  - ES : Cómo trabajamos
+- `process.title`
+  - HE : מהשיחה הראשונה ועד הדרינק האחרון
+  - EN : From the first call to the last drink
+  - FR : Du premier appel au dernier verre
+  - ES : De la primera llamada a la última copa
+- `process.quote`
+  - HE : מאחורי כל רגע שלא שוכחים יש דרך שלמה: ההקמות הראשונות, הפרטים הקטנים, והרגע שבו הכול מתחבר לערב אחד.
+  - EN : Behind every unforgettable moment there is a whole journey: the first setups, the small details, and the moment it all comes together into one evening.
+  - FR : Derrière chaque moment inoubliable, il y a tout un chemin : les premiers montages, les petits détails, et l'instant où tout se rassemble en une seule soirée.
+  - ES : Detrás de cada momento inolvidable hay todo un camino: los primeros montajes, los pequeños detalles y el instante en que todo se une en una sola noche.
+- `process.steps.0.name`
+  - HE : שיחה ראשונה
+  - EN : First call
+  - FR : Premier appel
+  - ES : Primera llamada
+- `process.steps.0.text`
+  - HE : מספרים לנו מה אתם מדמיינים: תאריך, מקום, כמה אורחים ואיזו אווירה.
+  - EN : Tell us what you imagine: the date, the place, how many guests and the mood.
+  - FR : Vous nous racontez ce que vous imaginez : la date, le lieu, le nombre d'invités et l'ambiance.
+  - ES : Nos contáis lo que imagináis: la fecha, el lugar, cuántos invitados y el ambiente.
+- `process.steps.1.name`
+  - HE : ביקור בשטח
+  - EN : Site visit
+  - FR : Visite du lieu
+  - ES : Visita al lugar
+- `process.steps.1.text`
+  - HE : נפגשים במקום, בודקים גישה, חשמל, מים וצל, ומתחילים לראות את החתונה.
+  - EN : We meet on site, check access, power, water and shade, and start seeing the wedding.
+  - FR : Nous nous retrouvons sur place, vérifions l'accès, l'électricité, l'eau et l'ombre, et le mariage commence à prendre forme.
+  - ES : Nos vemos allí, revisamos el acceso, la electricidad, el agua y la sombra, y la boda empieza a tomar forma.
+- `process.steps.2.name`
+  - HE : תפריט ועיצוב
+  - EN : Menu & design
+  - FR : Menu et décoration
+  - ES : Menú y decoración
+- `process.steps.2.text`
+  - HE : בונים יחד תפריט עונתי ותוכנית עיצוב, ומתאמים את כל הספקים.
+  - EN : Together we build a seasonal menu and a design plan, and coordinate every supplier.
+  - FR : Nous construisons ensemble un menu de saison et un plan de décoration, et coordonnons tous les prestataires.
+  - ES : Creamos juntos un menú de temporada y un plan de decoración, y coordinamos a todos los proveedores.
+- `process.steps.3.name`
+  - HE : הקמה
+  - EN : Setup
+  - FR : Montage
+  - ES : Montaje
+- `process.steps.3.text`
+  - HE : הצוות מגיע לשטח ומקים הכול: ריהוט, לאונג'ים, תאורה ומטבח שטח.
+  - EN : The team arrives in the field and builds everything: furniture, lounges, lighting and a field kitchen.
+  - FR : L'équipe arrive sur le terrain et installe tout : mobilier, lounges, éclairage et cuisine de plein air.
+  - ES : El equipo llega al terreno y lo monta todo: mobiliario, lounges, iluminación y una cocina al aire libre.
+- `process.steps.4.name`
+  - HE : היום עצמו
+  - EN : The day itself
+  - FR : Le jour J
+  - ES : El gran día
+- `process.steps.4.text`
+  - HE : אתם מתחתנים. אנחנו מנהלים את המטבח, השירות ולוח הזמנים.
+  - EN : You get married. We run the kitchen, the service and the timeline.
+  - FR : Vous vous mariez. Nous gérons la cuisine, le service et le déroulé de la soirée.
+  - ES : Vosotros os casáis. Nosotros llevamos la cocina, el servicio y los tiempos.
+- `process.steps.5.name`
+  - HE : הדרינק האחרון
+  - EN : The last drink
+  - FR : Le dernier verre
+  - ES : La última copa
+- `process.steps.5.text`
+  - HE : מרימים איתכם כוס אחרונה, ורק אז מתחילים לפרק.
+  - EN : We raise one last glass with you, and only then start packing up.
+  - FR : Nous levons un dernier verre avec vous, et seulement ensuite nous commençons à démonter.
+  - ES : Brindamos con vosotros una última vez, y solo entonces empezamos a desmontar.
+
+### weddings
+
+- `weddings.eyebrow`
+  - HE : החתונות שלנו
+  - EN : Our weddings
+  - FR : Nos mariages
+  - ES : Nuestras bodas
+- `weddings.title`
+  - HE : זוגות שאמרו כן בשטח
+  - EN : Couples who said yes outdoors
+  - FR : Ils ont dit oui en plein air
+  - ES : Parejas que dijeron sí al aire libre
+- `weddings.text`
+  - HE : כל חתונה היא סיפור אחר. הנה כמה מהאחרונות.
+  - EN : Every wedding is a different story. Here are a few of the latest.
+  - FR : Chaque mariage raconte une autre histoire. En voici quelques-uns parmi les plus récents.
+  - ES : Cada boda es una historia distinta. Aquí van algunas de las más recientes.
+- `weddings.open`
+  - HE : לגלריה של {names}
+  - EN : Open the gallery of {names}
+  - FR : Ouvrir la galerie de {names}
+  - ES : Abrir la galería de {names}
+- `weddings.photos`
+  - HE : {count} תמונות
+  - EN : {count} photos
+  - FR : {count} photos
+  - ES : {count} fotos
+- `weddings.with`
+  - HE : בשיתוף
+  - EN : With
+  - FR : Avec
+  - ES : Con
+- `weddings.names.roni-itay`
+  - HE : רוני ואיתי
+  - EN : Roni & Itay
+  - FR : Roni & Itay
+  - ES : Roni e Itay
+- `weddings.names.hila-rotem`
+  - HE : הילה ורותם
+  - EN : Hila & Rotem
+  - FR : Hila & Rotem
+  - ES : Hila y Rotem
+- `weddings.names.einav-davidi`
+  - HE : עינב ודוידי
+  - EN : Einav & Davidi
+  - FR : Einav & Davidi
+  - ES : Einav y Davidi
+- `weddings.names.noam-nadav`
+  - HE : נעם ונדב
+  - EN : Noam & Nadav
+  - FR : Noam & Nadav
+  - ES : Noam y Nadav
+- `weddings.names.adi-nimi`
+  - HE : עדי ונימי
+  - EN : Adi & Nimi
+  - FR : Adi & Nimi
+  - ES : Adi y Nimi
+- `weddings.notes.roni-itay`
+  - HE : חתונה בצבעים מלאים
+  - EN : A wedding in full color
+  - FR : Un mariage tout en couleurs
+  - ES : Una boda a todo color
+- `weddings.notes.hila-rotem`
+  - HE : ירוק, לבן וחמניות
+  - EN : Green, white and sunflowers
+  - FR : Vert, blanc et tournesols
+  - ES : Verde, blanco y girasoles
+- `weddings.notes.einav-davidi`
+  - HE : במשק של ההורים
+  - EN : On the family farm
+  - FR : Dans la ferme familiale
+  - ES : En la granja familiar
+- `weddings.notes.noam-nadav`
+  - HE : מהתכנון הראשון ועד הדרינק האחרון
+  - EN : From the first plan to the last drink
+  - FR : Du premier plan au dernier verre
+  - ES : Del primer plan a la última copa
+- `weddings.notes.adi-nimi`
+  - HE : חגיגה בשטח פתוח
+  - EN : A celebration in the open
+  - FR : Une fête en pleine nature
+  - ES : Una fiesta en plena naturaleza
+- `weddings.roles.production`
+  - HE : הפקה
+  - EN : Production
+  - FR : Production
+  - ES : Producción
+- `weddings.roles.design`
+  - HE : עיצוב
+  - EN : Design
+  - FR : Décoration
+  - ES : Decoración
+- `weddings.roles.flowers`
+  - HE : עיצוב ופרחים
+  - EN : Design & flowers
+  - FR : Décoration et fleurs
+  - ES : Decoración y flores
+- `weddings.roles.equipment`
+  - HE : ציוד
+  - EN : Equipment
+  - FR : Matériel
+  - ES : Material
+- `weddings.roles.tableware`
+  - HE : כלים
+  - EN : Tableware
+  - FR : Vaisselle
+  - ES : Vajilla
+- `weddings.roles.bar`
+  - HE : בר
+  - EN : Bar
+  - FR : Bar
+  - ES : Barra
+- `weddings.roles.sound`
+  - HE : הגברה ותאורה
+  - EN : Sound & lighting
+  - FR : Son et lumière
+  - ES : Sonido e iluminación
+- `weddings.roles.tipis`
+  - HE : אוהלי טיפי
+  - EN : Tipi tents
+  - FR : Tentes tipi
+  - ES : Tiendas tipi
+- `weddings.roles.film`
+  - HE : צילום וידאו
+  - EN : Film
+  - FR : Vidéo
+  - ES : Vídeo
+- `weddings.roles.photo`
+  - HE : צילום
+  - EN : Photography
+  - FR : Photo
+  - ES : Fotografía
+- `weddings.close`
+  - HE : סגירה
+  - EN : Close
+  - FR : Fermer
+  - ES : Cerrar
+- `weddings.prev`
+  - HE : התמונה הקודמת
+  - EN : Previous photo
+  - FR : Photo précédente
+  - ES : Foto anterior
+- `weddings.next`
+  - HE : התמונה הבאה
+  - EN : Next photo
+  - FR : Photo suivante
+  - ES : Foto siguiente
+- `weddings.counter`
+  - HE : {index} מתוך {count}
+  - EN : {index} of {count}
+  - FR : {index} sur {count}
+  - ES : {index} de {count}
+
+### upClose
+
+- `upClose.eyebrow`
+  - HE : מקרוב
+  - EN : Up close
+  - FR : De près
+  - ES : De cerca
+- `upClose.title`
+  - HE : הפרטים הקטנים
+  - EN : The small details
+  - FR : Les petits détails
+  - ES : Los pequeños detalles
+- `upClose.text`
+  - HE : רימון על השולחן, כוס ראשונה בשקיעה, גחלים שעוד לוחשות. הרגעים הקטנים שמרכיבים ערב אחד.
+  - EN : A pomegranate on the table, a first glass at sunset, embers still glowing. The small moments that make one evening.
+  - FR : Une grenade sur la table, un premier verre au coucher du soleil, des braises encore rouges. Les petits moments qui font une soirée.
+  - ES : Una granada sobre la mesa, una primera copa al atardecer, unas brasas que siguen vivas. Los pequeños momentos que hacen una noche.
+- `upClose.open`
+  - HE : הגדלת התמונה
+  - EN : Enlarge photo
+  - FR : Agrandir la photo
+  - ES : Ampliar la foto
+
+### partners
+
+- `partners.eyebrow`
+  - HE : שותפים
+  - EN : Partners
+  - FR : Partenaires
+  - ES : Colaboradores
+- `partners.title`
+  - HE : ספקים שאנחנו אוהבים לעבוד איתם
+  - EN : Suppliers we love working with
+  - FR : Les prestataires avec qui nous aimons travailler
+  - ES : Proveedores con los que nos encanta trabajar
+- `partners.text`
+  - HE : חתונה טובה היא עבודת צוות. אלה חלק מהאנשים שעשו איתנו את האירועים האחרונים.
+  - EN : A good wedding is teamwork. These are some of the people behind our latest events.
+  - FR : Un beau mariage est un travail d'équipe. Voici quelques-unes des personnes derrière nos derniers événements.
+  - ES : Una buena boda es trabajo en equipo. Estas son algunas de las personas detrás de nuestros últimos eventos.
+
+### reviews
+
+- `reviews.eyebrow`
+  - HE : מילים טובות
+  - EN : Kind words
+  - FR : Avis
+  - ES : Opiniones
+- `reviews.title`
+  - HE : מה הזוגות מספרים
+  - EN : What our couples say
+  - FR : Ce que racontent nos couples
+  - ES : Lo que cuentan nuestras parejas
+- `reviews.empty`
+  - HE : את הסיפורים המלאים, מהזוגות עצמם, אפשר לראות בסטוריז השמורים שלנו באינסטגרם.
+  - EN : The full stories, told by the couples themselves, are in the highlighted stories on our Instagram.
+  - FR : Leurs histoires, racontées par les couples eux-mêmes, sont dans les stories à la une de notre Instagram.
+  - ES : Sus historias, contadas por las propias parejas, están en las historias destacadas de nuestro Instagram.
+- `reviews.cta`
+  - HE : לסטוריז באינסטגרם
+  - EN : Instagram highlights
+  - FR : Voir les stories à la une
+  - ES : Ver las historias destacadas
+
+### faq
+
+- `faq.eyebrow`
+  - HE : שאלות נפוצות
+  - EN : FAQ
+  - FR : Questions fréquentes
+  - ES : Preguntas frecuentes
+- `faq.title`
+  - HE : לפני שמתחילים
+  - EN : Before we start
+  - FR : Avant de commencer
+  - ES : Antes de empezar
+- `faq.items.0.q`
+  - HE : האוכל כשר?
+  - EN : Is the food kosher?
+  - FR : La cuisine est-elle casher ?
+  - ES : ¿La comida es kosher?
+- `faq.items.0.a`
+  - HE : ספרו לנו בשאלון אם אתם צריכים אירוע כשר, ונבנה יחד את האפשרויות שמתאימות לכם.
+  - EN : Let us know in the form if you need a kosher event, and we will work out the right options with you.
+  - FR : Indiquez-nous dans le formulaire si vous souhaitez un événement casher, et nous verrons ensemble les options possibles.
+  - ES : Indicadnos en el formulario si necesitáis un evento kosher, y veremos juntos las opciones adecuadas.
+- `faq.items.1.q`
+  - HE : באילו מקומות אתם עובדים?
+  - EN : Where do you work?
+  - FR : Où travaillez-vous ?
+  - ES : ¿Dónde trabajáis?
+- `faq.items.1.a`
+  - HE : חתונות שטח ואירועים בטבע הם הבית שלנו: משק משפחתי, מטע, חורשה, חצר פרטית או שטח פתוח שעוד לא מצאתם. עוד מחפשים מקום? ספרו לנו, ונחשוב עליו יחד.
+  - EN : Outdoor weddings and events in nature are our home: a family farm, an orchard, a grove, a private garden or an open field you have not found yet. Still looking for a place? Tell us and we will think about it together.
+  - FR : Les mariages et les fêtes en pleine nature sont notre terrain : ferme familiale, verger, oliveraie, jardin privé ou terrain que vous n'avez pas encore trouvé. Vous cherchez encore un lieu ? Dites-le-nous, nous y réfléchirons ensemble.
+  - ES : Las bodas y los eventos en la naturaleza son nuestra casa: una granja familiar, un huerto, un olivar, un jardín privado o un terreno que todavía no habéis encontrado. ¿Seguís buscando lugar? Contádnoslo y lo pensamos juntos.
+- `faq.items.2.q`
+  - HE : מה עם חשמל, מים ושירותים בשטח?
+  - EN : What about power, water and restrooms on site?
+  - FR : Et l'électricité, l'eau et les sanitaires sur place ?
+  - ES : ¿Y la electricidad, el agua y los baños en el terreno?
+- `faq.items.2.a`
+  - HE : את התשתית מתכננים מראש. בביקור בשטח בודקים מה קיים ומה צריך להביא, כמו גנרטור, מים, תאורה ושירותים, ומתאמים את הספקים.
+  - EN : Infrastructure is planned ahead. During the site visit we check what is there and what needs to be brought, such as a generator, water, lighting and restrooms, and coordinate the suppliers.
+  - FR : Tout se prévoit à l'avance. Lors de la visite, nous regardons ce qui existe et ce qu'il faut apporter, comme un groupe électrogène, l'eau, l'éclairage et les sanitaires, et nous coordonnons les prestataires.
+  - ES : Todo se planifica con antelación. En la visita vemos qué hay y qué hay que llevar, como un generador, agua, iluminación y baños, y coordinamos a los proveedores.
+- `faq.items.3.q`
+  - HE : לכמה אורחים?
+  - EN : How many guests?
+  - FR : Pour combien d'invités ?
+  - ES : ¿Para cuántos invitados?
+- `faq.items.3.a`
+  - HE : המטבח, הצוות וההקמה נבנים לפי כמות האורחים. כתבו לנו כמה אתם מתכננים, ונחזור עם הצעה.
+  - EN : The kitchen, the staff and the setup are planned around your guest count. Tell us how many you expect and we will come back with a proposal.
+  - FR : La cuisine, l'équipe et le montage sont prévus selon votre nombre d'invités. Dites-nous combien vous en attendez, nous reviendrons vers vous avec une proposition.
+  - ES : La cocina, el equipo y el montaje se planifican según el número de invitados. Decidnos cuántos esperáis y os enviaremos una propuesta.
+- `faq.items.4.q`
+  - HE : כמה זמן מראש כדאי לפנות?
+  - EN : How far ahead should we get in touch?
+  - FR : Combien de temps à l'avance faut-il vous contacter ?
+  - ES : ¿Con cuánta antelación conviene escribir?
+- `faq.items.4.a`
+  - HE : ברגע שיש לכם תאריך, או אפילו רק עונה. בעונת החתונות תאריכים נסגרים מהר, ובשטח פתוח צריך גם זמן לתכנון.
+  - EN : As soon as you have a date, or even just a season. Wedding-season dates go quickly, and an open field also needs time to plan.
+  - FR : Dès que vous avez une date, ou même une saison. En haute saison, les dates partent vite, et un mariage en plein air demande aussi du temps de préparation.
+  - ES : En cuanto tengáis fecha, o incluso solo una temporada. En temporada alta las fechas vuelan, y una boda al aire libre también necesita tiempo de preparación.
+- `faq.items.5.q`
+  - HE : אפשר להזמין רק קייטרינג או רק הפקה?
+  - EN : Can we book only catering, or only production?
+  - FR : Peut-on réserver seulement le traiteur, ou seulement la production ?
+  - ES : ¿Se puede contratar solo el catering o solo la producción?
+- `faq.items.5.a`
+  - HE : כן. אפשר קייטרינג בלבד, הפקה בלבד או את שניהם יחד. מסמנים בשאלון מה מתאים לכם.
+  - EN : Yes. Catering only, production only, or both together. Just tick what suits you in the form.
+  - FR : Oui : le traiteur seul, la production seule, ou les deux ensemble. Il suffit de le cocher dans le formulaire.
+  - ES : Sí: solo catering, solo producción o las dos cosas juntas. Basta con marcarlo en el formulario.
+
+### quote
+
+- `quote.eyebrow`
+  - HE : צור קשר
+  - EN : Contact
+  - FR : Contact
+  - ES : Contacto
+- `quote.title`
+  - HE : מתכננים חתונה? ספרו לנו מה אתם מדמיינים
+  - EN : Planning a wedding? Tell us what you imagine
+  - FR : Vous préparez un mariage ? Racontez-nous ce que vous imaginez
+  - ES : ¿Preparáis una boda? Contadnos lo que imagináis
+- `quote.text`
+  - HE : כמה פרטים קצרים, והבקשה נשלחת אלינו בוואטסאפ עם כל המידע. נחזור אליכם בהקדם.
+  - EN : A few quick details, and your request reaches us on WhatsApp with everything in it. We will get back to you soon.
+  - FR : Quelques détails, et votre demande nous arrive sur WhatsApp avec toutes les informations. Nous vous répondons rapidement.
+  - ES : Unos pocos detalles, y vuestra solicitud nos llega por WhatsApp con toda la información. Os responderemos pronto.
+- `quote.steps.event`
+  - HE : האירוע
+  - EN : The event
+  - FR : L'événement
+  - ES : El evento
+- `quote.steps.service`
+  - HE : מה אתם צריכים
+  - EN : What you need
+  - FR : Ce dont vous avez besoin
+  - ES : Lo que necesitáis
+- `quote.steps.contact`
+  - HE : איך חוזרים אליכם
+  - EN : How to reach you
+  - FR : Vos coordonnées
+  - ES : Cómo contactaros
+- `quote.fields.eventType`
+  - HE : סוג האירוע
+  - EN : Type of event
+  - FR : Type d'événement
+  - ES : Tipo de evento
+- `quote.fields.eventTypes.wedding`
+  - HE : חתונה
+  - EN : Wedding
+  - FR : Mariage
+  - ES : Boda
+- `quote.fields.eventTypes.henna`
+  - HE : חינה
+  - EN : Henna
+  - FR : Henné
+  - ES : Henna
+- `quote.fields.eventTypes.barmitzvah`
+  - HE : בר / בת מצווה
+  - EN : Bar / Bat Mitzvah
+  - FR : Bar / Bat Mitzvah
+  - ES : Bar / Bat Mitzvá
+- `quote.fields.eventTypes.family`
+  - HE : אירוע משפחתי
+  - EN : Family event
+  - FR : Fête de famille
+  - ES : Celebración familiar
+- `quote.fields.eventTypes.corporate`
+  - HE : אירוע חברה
+  - EN : Company event
+  - FR : Événement d'entreprise
+  - ES : Evento de empresa
+- `quote.fields.eventTypes.other`
+  - HE : אחר
+  - EN : Other
+  - FR : Autre
+  - ES : Otro
+- `quote.fields.guests`
+  - HE : כמה אורחים
+  - EN : Number of guests
+  - FR : Nombre d'invités
+  - ES : Número de invitados
+- `quote.fields.date`
+  - HE : תאריך משוער
+  - EN : Estimated date
+  - FR : Date estimée
+  - ES : Fecha estimada
+- `quote.fields.dateBooked`
+  - HE : התאריך הזה מסומן אצלנו כתפוס. שלחו בכל זאת, ונבדוק יחד את האפשרויות.
+  - EN : This date is marked as taken on our side. Send it anyway and we will look at the options together.
+  - FR : Cette date est déjà notée comme prise chez nous. Envoyez quand même : nous regarderons ensemble les possibilités.
+  - ES : Esta fecha figura como ocupada en nuestra agenda. Enviad la solicitud igualmente y veremos juntos las opciones.
+- `quote.fields.venue`
+  - HE : המקום
+  - EN : Venue
+  - FR : Le lieu
+  - ES : El lugar
+- `quote.fields.venues.have`
+  - HE : יש לנו מקום
+  - EN : We have a venue
+  - FR : Nous avons un lieu
+  - ES : Tenemos lugar
+- `quote.fields.venues.search`
+  - HE : עוד מחפשים מקום
+  - EN : Still looking
+  - FR : Nous cherchons un lieu
+  - ES : Seguimos buscando
+- `quote.fields.venueName`
+  - HE : איפה?
+  - EN : Where?
+  - FR : Où ?
+  - ES : ¿Dónde?
+- `quote.fields.venuePlaceholder`
+  - HE : שם המקום או היישוב
+  - EN : Name of the place or town
+  - FR : Nom du lieu ou de la ville
+  - ES : Nombre del lugar o del pueblo
+- `quote.fields.kosher`
+  - HE : כשרות
+  - EN : Kosher
+  - FR : Casher
+  - ES : Kosher
+- `quote.fields.kosherOptions.kosher`
+  - HE : כשר
+  - EN : Kosher
+  - FR : Casher
+  - ES : Kosher
+- `quote.fields.kosherOptions.not`
+  - HE : לא כשר
+  - EN : Not kosher
+  - FR : Pas casher
+  - ES : No kosher
+- `quote.fields.source`
+  - HE : איך הגעתם אלינו
+  - EN : How did you find us
+  - FR : Comment nous avez-vous connus
+  - ES : Cómo nos conocisteis
+- `quote.fields.sources.instagram`
+  - HE : אינסטגרם
+  - EN : Instagram
+  - FR : Instagram
+  - ES : Instagram
+- `quote.fields.sources.facebook`
+  - HE : פייסבוק
+  - EN : Facebook
+  - FR : Facebook
+  - ES : Facebook
+- `quote.fields.sources.friends`
+  - HE : המלצה מחברים
+  - EN : Friends' recommendation
+  - FR : Recommandation d'amis
+  - ES : Recomendación de amigos
+- `quote.fields.sources.event`
+  - HE : הייתי באירוע שלכם
+  - EN : I was at one of your events
+  - FR : J'étais à l'un de vos événements
+  - ES : Estuve en uno de vuestros eventos
+- `quote.fields.sources.supplier`
+  - HE : דרך ספק או מקום אירועים
+  - EN : Through a supplier or venue
+  - FR : Par un prestataire ou un lieu
+  - ES : A través de un proveedor o un lugar
+- `quote.fields.sources.google`
+  - HE : גוגל
+  - EN : Google
+  - FR : Google
+  - ES : Google
+- `quote.fields.sources.other`
+  - HE : אחר
+  - EN : Other
+  - FR : Autre
+  - ES : Otro
+- `quote.fields.sourceNone`
+  - HE : בחרו
+  - EN : Choose
+  - FR : Choisir
+  - ES : Elegir
+- `quote.fields.services`
+  - HE : מה אתם צריכים
+  - EN : What you need
+  - FR : Prestations souhaitées
+  - ES : Lo que necesitáis
+- `quote.fields.serviceOptions.catering`
+  - HE : קייטרינג
+  - EN : Catering
+  - FR : Traiteur
+  - ES : Catering
+- `quote.fields.serviceOptions.production`
+  - HE : הפקה
+  - EN : Production
+  - FR : Production
+  - ES : Producción
+- `quote.fields.serviceOptions.both`
+  - HE : קייטרינג והפקה
+  - EN : Catering & production
+  - FR : Traiteur et production
+  - ES : Catering y producción
+- `quote.fields.budget`
+  - HE : תקציב משוער
+  - EN : Approximate budget
+  - FR : Budget indicatif
+  - ES : Presupuesto aproximado
+- `quote.fields.budgets.0`
+  - HE : עד ‎₪50,000
+  - EN : Up to ₪50,000
+  - FR : Jusqu'à 50 000 ₪
+  - ES : Hasta 50.000 ₪
+- `quote.fields.budgets.1`
+  - HE : ‎₪50,000–100,000
+  - EN : ₪50,000–100,000
+  - FR : 50 000 – 100 000 ₪
+  - ES : 50.000 – 100.000 ₪
+- `quote.fields.budgets.2`
+  - HE : ‎₪100,000–200,000
+  - EN : ₪100,000–200,000
+  - FR : 100 000 – 200 000 ₪
+  - ES : 100.000 – 200.000 ₪
+- `quote.fields.budgets.3`
+  - HE : מעל ‎₪200,000
+  - EN : Over ₪200,000
+  - FR : Plus de 200 000 ₪
+  - ES : Más de 200.000 ₪
+- `quote.fields.budgets.4`
+  - HE : עוד לא יודעים
+  - EN : Not sure yet
+  - FR : Pas encore défini
+  - ES : Aún no lo sabemos
+- `quote.fields.budgetNone`
+  - HE : בחרו
+  - EN : Choose
+  - FR : Choisir
+  - ES : Elegir
+- `quote.fields.optional`
+  - HE : לא חובה
+  - EN : optional
+  - FR : facultatif
+  - ES : opcional
+- `quote.fields.name`
+  - HE : שם
+  - EN : Name
+  - FR : Nom
+  - ES : Nombre
+- `quote.fields.phone`
+  - HE : טלפון
+  - EN : Phone
+  - FR : Téléphone
+  - ES : Teléfono
+- `quote.fields.email`
+  - HE : אימייל
+  - EN : Email
+  - FR : E-mail
+  - ES : Correo electrónico
+- `quote.fields.message`
+  - HE : ספרו לנו מה אתם מדמיינים
+  - EN : Tell us what you imagine
+  - FR : Racontez-nous ce que vous imaginez
+  - ES : Contadnos lo que imagináis
+- `quote.fields.messagePlaceholder`
+  - HE : האווירה, הצבעים, האוכל שאתם אוהבים, כל מה שעולה לכם בראש
+  - EN : The mood, the colors, the food you love, anything that comes to mind
+  - FR : L'ambiance, les couleurs, la cuisine que vous aimez, tout ce qui vous passe par la tête
+  - ES : El ambiente, los colores, la comida que os gusta, todo lo que se os ocurra
+- `quote.required`
+  - HE : שדה חובה
+  - EN : Required
+  - FR : Champ obligatoire
+  - ES : Campo obligatorio
+- `quote.invalidPhone`
+  - HE : מספר הטלפון לא נראה תקין
+  - EN : This phone number does not look right
+  - FR : Ce numéro ne semble pas valide
+  - ES : Este número no parece correcto
+- `quote.invalidEmail`
+  - HE : כתובת האימייל לא נראית תקינה
+  - EN : This email address does not look right
+  - FR : Cette adresse e-mail ne semble pas valide
+  - ES : Este correo no parece correcto
+- `quote.submit`
+  - HE : שליחה בוואטסאפ
+  - EN : Send on WhatsApp
+  - FR : Envoyer sur WhatsApp
+  - ES : Enviar por WhatsApp
+- `quote.hint`
+  - HE : וואטסאפ ייפתח עם סיכום הבקשה, נשאר רק ללחוץ על שליחה.
+  - EN : WhatsApp opens with a summary of your request; you only need to press send.
+  - FR : WhatsApp s'ouvre avec le récapitulatif de votre demande ; il ne reste qu'à appuyer sur envoyer.
+  - ES : WhatsApp se abre con el resumen de vuestra solicitud; solo queda pulsar enviar.
+- `quote.consent`
+  - HE : הפרטים משמשים רק כדי לחזור אליכם לגבי האירוע.
+  - EN : Your details are only used to get back to you about your event.
+  - FR : Vos coordonnées servent uniquement à vous répondre au sujet de votre événement.
+  - ES : Vuestros datos solo se usan para responderos sobre el evento.
+- `quote.success.thanks`
+  - HE : תודה!
+  - EN : Thank you
+  - FR : Merci
+  - ES : Gracias
+- `quote.success.title`
+  - HE : הבקשה מוכנה בוואטסאפ
+  - EN : Your request is ready on WhatsApp
+  - FR : Votre demande est prête sur WhatsApp
+  - ES : Vuestra solicitud está lista en WhatsApp
+- `quote.success.text`
+  - HE : אם וואטסאפ לא נפתח, אפשר לפתוח אותו מכאן. נחזור אליכם בהקדם.
+  - EN : If WhatsApp did not open, you can open it from here. We will get back to you soon.
+  - FR : Si WhatsApp ne s'est pas ouvert, vous pouvez l'ouvrir ici. Nous vous répondons rapidement.
+  - ES : Si WhatsApp no se ha abierto, podéis abrirlo desde aquí. Os responderemos pronto.
+- `quote.success.again`
+  - HE : פתיחת וואטסאפ
+  - EN : Open WhatsApp
+  - FR : Ouvrir WhatsApp
+  - ES : Abrir WhatsApp
+- `quote.success.reset`
+  - HE : בקשה חדשה
+  - EN : New request
+  - FR : Nouvelle demande
+  - ES : Nueva solicitud
+- `quote.message.title`
+  - HE : בקשה להצעת מחיר · מור וקינמון
+  - EN : Quote request · Mor & Cinnamon
+  - FR : Demande de devis · Mor & Cinnamon
+  - ES : Solicitud de presupuesto · Mor & Cinnamon
+- `quote.message.event`
+  - HE : סוג האירוע
+  - EN : Event
+  - FR : Événement
+  - ES : Evento
+- `quote.message.guests`
+  - HE : אורחים
+  - EN : Guests
+  - FR : Invités
+  - ES : Invitados
+- `quote.message.date`
+  - HE : תאריך משוער
+  - EN : Estimated date
+  - FR : Date estimée
+  - ES : Fecha estimada
+- `quote.message.venue`
+  - HE : מקום
+  - EN : Venue
+  - FR : Lieu
+  - ES : Lugar
+- `quote.message.kosher`
+  - HE : כשרות
+  - EN : Kosher
+  - FR : Casher
+  - ES : Kosher
+- `quote.message.source`
+  - HE : איך הגיעו אלינו
+  - EN : Found us through
+  - FR : Nous a connus par
+  - ES : Nos conocieron por
+- `quote.message.services`
+  - HE : שירות
+  - EN : Service
+  - FR : Prestations
+  - ES : Servicio
+- `quote.message.budget`
+  - HE : תקציב
+  - EN : Budget
+  - FR : Budget
+  - ES : Presupuesto
+- `quote.message.name`
+  - HE : שם
+  - EN : Name
+  - FR : Nom
+  - ES : Nombre
+- `quote.message.phone`
+  - HE : טלפון
+  - EN : Phone
+  - FR : Téléphone
+  - ES : Teléfono
+- `quote.message.email`
+  - HE : אימייל
+  - EN : Email
+  - FR : E-mail
+  - ES : Correo
+- `quote.message.notes`
+  - HE : מה אנחנו מדמיינים
+  - EN : What we imagine
+  - FR : Ce que nous imaginons
+  - ES : Lo que imaginamos
+- `quote.message.ref`
+  - HE : מספר בקשה
+  - EN : Request no.
+  - FR : N° de demande
+  - ES : N.º de solicitud
+- `quote.message.closing`
+  - HE : נשלח מהאתר של מור וקינמון
+  - EN : Sent from the Mor & Cinnamon website
+  - FR : Envoyé depuis le site de Mor & Cinnamon
+  - ES : Enviado desde el sitio de Mor & Cinnamon
+
+### email
+
+- `email.subjectBusiness`
+  - HE : בקשה חדשה להצעת מחיר
+  - EN : New quote request
+  - FR : Nouvelle demande de devis
+  - ES : Nueva solicitud de presupuesto
+- `email.subjectClient`
+  - HE : קיבלנו את הבקשה שלכם · מור וקינמון
+  - EN : We received your request · Mor & Cinnamon
+  - FR : Nous avons bien reçu votre demande · Mor & Cinnamon
+  - ES : Hemos recibido vuestra solicitud · Mor & Cinnamon
+- `email.intro`
+  - HE : תודה שפניתם אלינו! זה סיכום הבקשה, ונחזור אליכם בהקדם.
+  - EN : Thank you for getting in touch! Here is a summary of your request; we will get back to you soon.
+  - FR : Merci pour votre message ! Voici le récapitulatif de votre demande ; nous vous répondons rapidement.
+  - ES : ¡Gracias por escribirnos! Este es el resumen de vuestra solicitud; os responderemos pronto.
+
+### whatsapp
+
+- `whatsapp.float`
+  - HE : שיחה בוואטסאפ
+  - EN : Chat on WhatsApp
+  - FR : Écrire sur WhatsApp
+  - ES : Escribir por WhatsApp
+- `whatsapp.hello`
+  - HE : היי מור וקינמון, ראינו את האתר ונשמח לשמוע פרטים על אירוע.
+  - EN : Hi Mor & Cinnamon, we saw your website and would love to hear more about an event.
+  - FR : Bonjour Mor & Cinnamon, nous avons vu votre site et aimerions en savoir plus pour un événement.
+  - ES : Hola, Mor & Cinnamon: hemos visto vuestra web y nos gustaría saber más para un evento.
+
+### footer
+
+- `footer.tagline`
+  - HE : קייטרינג עונתי והפקת חתונות שטח, מהתכנון הראשון ועד הדרינק האחרון.
+  - EN : Seasonal catering and outdoor wedding production, from the first plan to the last drink.
+  - FR : Traiteur de saison et production de mariages en plein air, du premier plan au dernier verre.
+  - ES : Catering de temporada y producción de bodas al aire libre, del primer plan a la última copa.
+- `footer.contact`
+  - HE : יצירת קשר
+  - EN : Contact
+  - FR : Contact
+  - ES : Contacto
+- `footer.explore`
+  - HE : באתר
+  - EN : On this site
+  - FR : Sur le site
+  - ES : En el sitio
+- `footer.legal`
+  - HE : תנאי שימוש ופרטיות
+  - EN : Terms & privacy
+  - FR : Conditions et confidentialité
+  - ES : Condiciones y privacidad
+- `footer.rights`
+  - HE : כל הזכויות שמורות
+  - EN : All rights reserved
+  - FR : Tous droits réservés
+  - ES : Todos los derechos reservados
+- `footer.photos`
+  - HE : התמונות מתוך האירועים של מור וקינמון, בצילום הצלמים שתויגו בפוסטים.
+  - EN : Photos from Mor & Cinnamon events, by the photographers tagged in their posts.
+  - FR : Photos des événements de Mor & Cinnamon, par les photographes cités dans leurs publications.
+  - ES : Fotos de los eventos de Mor & Cinnamon, de los fotógrafos citados en sus publicaciones.
+
+### legal
+
+- `legal.title`
+  - HE : תנאי שימוש ופרטיות
+  - EN : Terms & privacy
+  - FR : Conditions et confidentialité
+  - ES : Condiciones y privacidad
+- `legal.back`
+  - HE : חזרה לדף הבית
+  - EN : Back to home
+  - FR : Retour à l'accueil
+  - ES : Volver al inicio
+- `legal.sections.0.title`
+  - HE : האתר
+  - EN : This website
+  - FR : Le site
+  - ES : El sitio
+- `legal.sections.0.text`
+  - HE : האתר מציג את שירותי הקייטרינג וההפקה של מור וקינמון. התמונות והסרטונים צולמו באירועים שהפקנו או שבישלנו בהם, ושייכים למור וקינמון ולצלמים שלהם.
+  - EN : This website presents the catering and production services of Mor & Cinnamon. The photos and videos were taken at events we produced or cooked for, and belong to Mor & Cinnamon and their photographers.
+  - FR : Ce site présente les services de traiteur et de production de Mor & Cinnamon. Les photos et vidéos ont été prises lors d'événements que nous avons produits ou servis ; elles appartiennent à Mor & Cinnamon et à leurs photographes.
+  - ES : Este sitio presenta los servicios de catering y producción de Mor & Cinnamon. Las fotos y los vídeos se tomaron en eventos que producimos o servimos, y pertenecen a Mor & Cinnamon y a sus fotógrafos.
+- `legal.sections.1.title`
+  - HE : טופס הבקשה
+  - EN : The request form
+  - FR : Le formulaire de demande
+  - ES : El formulario
+- `legal.sections.1.text`
+  - HE : הפרטים שאתם ממלאים (שם, טלפון, אימייל ופרטי האירוע) נשלחים אלינו בוואטסאפ, ואם הוזן אימייל, גם בהודעת אימייל. הם משמשים רק כדי לחזור אליכם לגבי האירוע, ולא מועברים לגורם אחר.
+  - EN : The details you fill in (name, phone, email and event details) are sent to us on WhatsApp and, if you entered an email, by email as well. They are only used to get back to you about your event and are not shared with anyone else.
+  - FR : Les informations saisies (nom, téléphone, e-mail et détails de l'événement) nous sont envoyées sur WhatsApp et, si vous avez indiqué un e-mail, par e-mail. Elles servent uniquement à vous répondre au sujet de votre événement et ne sont transmises à personne.
+  - ES : Los datos que rellenáis (nombre, teléfono, correo y detalles del evento) nos llegan por WhatsApp y, si indicáis un correo, también por correo electrónico. Solo se usan para responderos sobre el evento y no se comparten con nadie.
+- `legal.sections.2.title`
+  - HE : עוגיות ואחסון
+  - EN : Cookies and storage
+  - FR : Cookies et stockage
+  - ES : Cookies y almacenamiento
+- `legal.sections.2.text`
+  - HE : האתר לא משתמש בעוגיות פרסום או מעקב. נשמרים רק בחירת השפה, וההעדפה לא להציג שוב את אנימציית הפתיחה.
+  - EN : This website uses no advertising or tracking cookies. Only your language choice is kept, along with the preference not to replay the opening animation.
+  - FR : Le site n'utilise aucun cookie publicitaire ni de suivi. Seuls votre choix de langue et la préférence de ne pas rejouer l'animation d'ouverture sont conservés.
+  - ES : El sitio no usa cookies publicitarias ni de seguimiento. Solo se guardan vuestra elección de idioma y la preferencia de no volver a mostrar la animación de apertura.
+- `legal.sections.3.title`
+  - HE : יצירת קשר
+  - EN : Contact
+  - FR : Contact
+  - ES : Contacto
+- `legal.sections.3.text`
+  - HE : לכל שאלה, או כדי לבקש למחוק את הפרטים שלכם, כתבו לנו בוואטסאפ ‎050-536-8876.
+  - EN : For any question, or to ask us to delete your details, write to us on WhatsApp at +972 50-536-8876.
+  - FR : Pour toute question, ou pour demander la suppression de vos données, écrivez-nous sur WhatsApp au +972 50-536-8876.
+  - ES : Para cualquier pregunta, o para pedir que borremos vuestros datos, escribidnos por WhatsApp al +972 50-536-8876.
+
+### notFound
+
+- `notFound.title`
+  - HE : העמוד לא נמצא
+  - EN : Page not found
+  - FR : Page introuvable
+  - ES : Página no encontrada
+- `notFound.text`
+  - HE : אולי הקישור השתנה. אפשר לחזור לדף הבית ולהמשיך משם.
+  - EN : The link may have changed. You can go back to the home page and continue from there.
+  - FR : Le lien a peut-être changé. Revenez à l'accueil pour continuer.
+  - ES : Puede que el enlace haya cambiado. Volved al inicio para seguir desde allí.
+- `notFound.back`
+  - HE : לדף הבית
+  - EN : Back to home
+  - FR : Retour à l'accueil
+  - ES : Volver al inicio
+
+### alt
+
+- `alt.poster-panel`
+  - HE : הילה ורותם הולכים יד ביד אל החופה, בגינה מוצלת
+  - EN : Hila and Rotem walking hand in hand toward the chuppah, in a shaded garden
+  - FR : Hila et Rotem marchent main dans la main vers la houppa, dans un jardin ombragé
+  - ES : Hila y Rotem caminan de la mano hacia la jupá, en un jardín a la sombra
+- `alt.poster-tall`
+  - HE : הילה ורותם הולכים יד ביד אל החופה, בגינה מוצלת
+  - EN : Hila and Rotem walking hand in hand toward the chuppah, in a shaded garden
+  - FR : Hila et Rotem marchent main dans la main vers la houppa, dans un jardin ombragé
+  - ES : Hila y Rotem caminan de la mano hacia la jupá, en un jardín a la sombra
+- `alt.houppa-voilages-tapis`
+  - HE : חופה עם וילונות לבנים ושטיחים, בין עצים
+  - EN : A chuppah with white drapes and rugs, among trees
+  - FR : Houppa aux voilages blancs et tapis, entre les arbres
+  - ES : Jupá con cortinas blancas y alfombras, entre árboles
+- `alt.voilage-olivier`
+  - HE : וילון לבן קשור לעץ זית, לפני הטקס
+  - EN : A white drape tied to an olive tree before the ceremony
+  - FR : Voilage blanc noué à un olivier avant la cérémonie
+  - ES : Una cortina blanca atada a un olivo antes de la ceremonia
+- `alt.adi-nimi`
+  - HE : עדי ונימי מתחבקים בין האורחים
+  - EN : Adi and Nimi embracing among their guests
+  - FR : Adi et Nimi enlacés au milieu de leurs invités
+  - ES : Adi y Nimi abrazados entre sus invitados
+- `alt.einav-davidi-houppa`
+  - HE : עינב ודוידי מתנשקים מתחת לחופה
+  - EN : Einav and Davidi kissing under the chuppah
+  - FR : Einav et Davidi s'embrassent sous la houppa
+  - ES : Einav y Davidi se besan bajo la jupá
+- `alt.einav-davidi-olivier`
+  - HE : עינב ודוידי מתחבקים מתחת לאוהל בין עצי הזית
+  - EN : Einav and Davidi embracing under a tent among olive trees
+  - FR : Einav et Davidi enlacés sous une tente, entre les oliviers
+  - ES : Einav y Davidi abrazados bajo una carpa, entre olivos
+- `alt.einav-davidi-tables`
+  - HE : עינב ודוידי עוברים בין השולחנות במשק, תחת שרשראות אור
+  - EN : Einav and Davidi walking between the tables on the farm, under string lights
+  - FR : Einav et Davidi passent entre les tables de la ferme, sous les guirlandes
+  - ES : Einav y Davidi pasan entre las mesas de la granja, bajo guirnaldas de luces
+- `alt.hila-rotem-houppa`
+  - HE : הילה ורותם מתנשקים מתחת לחופה
+  - EN : Hila and Rotem kissing under the chuppah
+  - FR : Hila et Rotem s'embrassent sous la houppa
+  - ES : Hila y Rotem se besan bajo la jupá
+- `alt.hila-rotem-mains`
+  - HE : הידיים של הילה ורותם, שמלת תחרה וחולצה לבנה
+  - EN : Hila and Rotem holding hands, lace dress and white shirt
+  - FR : Les mains de Hila et Rotem, robe en dentelle et chemise blanche
+  - ES : Las manos de Hila y Rotem, vestido de encaje y camisa blanca
+- `alt.hila-rotem-marche`
+  - HE : הילה ורותם הולכים יד ביד אל החופה
+  - EN : Hila and Rotem walking hand in hand toward the chuppah
+  - FR : Hila et Rotem marchent main dans la main vers la houppa
+  - ES : Hila y Rotem caminan de la mano hacia la jupá
+- `alt.noam-nadav`
+  - HE : נעם ונדב עם ילדה בשמלה ורודה, בגינה
+  - EN : Noam and Nadav with a little girl in a pink dress, in the garden
+  - FR : Noam et Nadav avec une petite fille en robe rose, dans le jardin
+  - ES : Noam y Nadav con una niña vestida de rosa, en el jardín
+- `alt.roni-itay-danse`
+  - HE : רוני ואיתי רוקדים בשקיעה
+  - EN : Roni and Itay dancing at sunset
+  - FR : Roni et Itay dansent au coucher du soleil
+  - ES : Roni e Itay bailan al atardecer
+- `alt.roni-itay-lounge`
+  - HE : רוני ואיתי צוחקים בלאונג' כתום
+  - EN : Roni and Itay laughing in an orange lounge
+  - FR : Roni et Itay rient dans un lounge orange
+  - ES : Roni e Itay se ríen en un lounge naranja
+- `alt.roni-itay-mariee-fleurs`
+  - HE : רוני, הכלה, בשמלה לבנה בין פרחים כתומים
+  - EN : Roni, the bride, in a white dress among orange flowers
+  - FR : Roni, la mariée, en robe blanche au milieu de fleurs orange
+  - ES : Roni, la novia, con vestido blanco entre flores naranjas
+- `alt.roni-itay-sourire`
+  - HE : רוני מחייכת בין הפרחים
+  - EN : Roni smiling among the flowers
+  - FR : Roni sourit au milieu des fleurs
+  - ES : Roni sonríe entre las flores
+- `alt.roni-mariee`
+  - HE : רוני בשמלת סאטן לבנה, בשטח האירוע
+  - EN : Roni in a white satin dress at the venue
+  - FR : Roni en robe de satin blanc, sur le lieu de la fête
+  - ES : Roni con un vestido de satén blanco, en el lugar de la fiesta
+- `alt.assiette-boeuf-salade`
+  - HE : צלחת עם בשר צלוי, סלט ועגבניות, מוגשת ביד
+  - EN : A plate of roast beef, salad and tomatoes, held in hand
+  - FR : Assiette de bœuf rôti, salade et tomates, tenue à la main
+  - ES : Un plato de carne asada, ensalada y tomates, sostenido en la mano
+- `alt.assiette-focaccia-viande`
+  - HE : צלחת עם לחם, בשר מפורק, ירוקים וקרם
+  - EN : A plate with bread, pulled meat, greens and cream
+  - FR : Assiette de pain, viande effilochée, herbes et crème
+  - ES : Un plato con pan, carne deshilachada, hierbas y crema
+- `alt.assiettes-poulet-haricots`
+  - HE : צלחות עם עוף, שעועית ירוקה ודגנים
+  - EN : Plates of chicken, green beans and grains
+  - FR : Assiettes de poulet, haricots verts et céréales
+  - ES : Platos de pollo, judías verdes y cereales
+- `alt.barquettes-laitue-grenade`
+  - HE : סירות חסה ממולאות ליד רימונים
+  - EN : Filled lettuce cups next to pomegranates
+  - FR : Feuilles de laitue garnies à côté de grenades
+  - ES : Hojas de lechuga rellenas junto a granadas
+- `alt.barquettes-salade`
+  - HE : מגש סירות ירוקות שמוגש בגינה
+  - EN : A tray of green bites served in the garden
+  - FR : Plateau de bouchées vertes servi dans le jardin
+  - ES : Una bandeja de bocados verdes servida en el jardín
+- `alt.boeuf-pommes-de-terre`
+  - HE : בשר צלוי פרוס עם תפוחי אדמה מהתנור
+  - EN : Sliced roast beef with oven potatoes
+  - FR : Rôti de bœuf tranché et pommes de terre au four
+  - ES : Carne asada en lonchas con patatas al horno
+- `alt.boeuf-tranche`
+  - HE : שף פורס בשר על הפלנצ'ה
+  - EN : A chef slicing meat on the plancha
+  - FR : Un chef tranche la viande sur la plancha
+  - ES : Un chef corta carne en la plancha
+- `alt.bouchees-piment`
+  - HE : ביסים קטנים עם פלפל חריף על קרש עץ
+  - EN : Small bites with chili on a wooden board
+  - FR : Petites bouchées au piment sur une planche en bois
+  - ES : Pequeños bocados con guindilla sobre una tabla de madera
+- `alt.bruschettas-tomates`
+  - HE : ברוסקטות עגבניות על מגש
+  - EN : Tomato bruschetta on a tray
+  - FR : Bruschettas à la tomate sur un plateau
+  - ES : Bruschettas de tomate en una bandeja
+- `alt.chef-dressage`
+  - HE : שף מגיש מנה מתוך מחבת גדולה
+  - EN : A chef serving a dish from a large pan
+  - FR : Un chef sert une assiette depuis une grande poêle
+  - ES : Un chef sirve un plato desde una sartén grande
+- `alt.choux-presentoir`
+  - HE : פחזניות במגדל הגשה
+  - EN : Cream puffs on a serving tower
+  - FR : Choux à la crème sur un présentoir
+  - ES : Profiteroles en una torre
+- `alt.cocotte-brioche`
+  - HE : סיר תבשיל ולחם בריוש קלוע בעמדה
+  - EN : A stew pot and braided brioche at a station
+  - FR : Cocotte mijotée et brioche tressée sur une station
+  - ES : Una olla de guiso y brioche trenzado en una estación
+- `alt.crostinis-planche`
+  - HE : קרוסטיני על קרש הגשה
+  - EN : Crostini on a serving board
+  - FR : Crostinis sur une planche de service
+  - ES : Crostinis sobre una tabla de servir
+- `alt.desserts-assiettes`
+  - HE : צלחות קינוח עם קרמבל ופירות
+  - EN : Dessert plates with crumble and fruit
+  - FR : Assiettes de dessert au crumble et aux fruits
+  - ES : Platos de postre con crumble y fruta
+- `alt.entrees-plateau-argent`
+  - HE : מגש כסף עם מנות ראשונות קטנות
+  - EN : A silver tray of small starters
+  - FR : Plateau d'argent garni de petites entrées
+  - ES : Una bandeja de plata con pequeños entrantes
+- `alt.gateau-chocolat-creme`
+  - HE : פרוסת עוגת שוקולד עם קרם
+  - EN : A slice of chocolate cake with cream
+  - FR : Part de gâteau au chocolat et crème
+  - ES : Una porción de tarta de chocolate con nata
+- `alt.meringue-coulis`
+  - HE : קערת מרנג, רוטב פירות יער וצלחות קינוח
+  - EN : A bowl of meringue, berry sauce and dessert plates
+  - FR : Saladier de meringue, coulis de fruits rouges et assiettes de dessert
+  - ES : Un cuenco de merengue, salsa de frutos rojos y platos de postre
+- `alt.pates-legumes-grilles`
+  - HE : פסטה וירקות צלויים בצלחות לבנות
+  - EN : Pasta and grilled vegetables on white plates
+  - FR : Pâtes et légumes grillés dans des assiettes blanches
+  - ES : Pasta y verduras a la parrilla en platos blancos
+- `alt.pavlova-fruits-rouges`
+  - HE : פבלובה עם קרם ורוטב פירות יער
+  - EN : Pavlova with cream and berry sauce
+  - FR : Pavlova, crème et coulis de fruits rouges
+  - ES : Pavlova con nata y salsa de frutos rojos
+- `alt.poulet-grille-boulgour`
+  - HE : עוף על הגריל עם דגנים בצלחות מעוטרות
+  - EN : Grilled chicken with grains on scalloped plates
+  - FR : Poulet grillé et céréales dans des assiettes festonnées
+  - ES : Pollo a la parrilla con cereales en platos festoneados
+- `alt.salade-peches`
+  - HE : סלט עלים עם אפרסקים בקערה לבנה
+  - EN : Leaf salad with peaches in a white bowl
+  - FR : Salade de feuilles aux pêches dans un bol blanc
+  - ES : Ensalada de hojas con melocotón en un cuenco blanco
+- `alt.dressage-assiettes`
+  - HE : מלצרית מסדרת מנות על ערימת צלחות
+  - EN : A server arranging dishes on a stack of plates
+  - FR : Une serveuse dresse les assiettes sur une pile
+  - ES : Una camarera emplata sobre una pila de platos
+- `alt.dressage-haricots`
+  - HE : מנות עם שעועית ירוקה ודגנים בעמדה
+  - EN : Dishes with green beans and grains at a station
+  - FR : Assiettes de haricots verts et céréales sur une station
+  - ES : Platos con judías verdes y cereales en una estación
+- `alt.equipe-buffet`
+  - HE : מוזגים קוקטייל ליד ארגז תפוזים
+  - EN : Pouring a cocktail next to a crate of oranges
+  - FR : Service d'un cocktail à côté d'une caisse d'oranges
+  - ES : Sirviendo un cóctel junto a una caja de naranjas
+- `alt.fleuriste-hortensias`
+  - HE : מעצבת פרחים מסדרת זר לבן
+  - EN : A florist arranging a white bouquet
+  - FR : Une fleuriste compose un bouquet blanc
+  - ES : Una florista prepara un ramo blanco
+- `alt.mise-en-place-bougies`
+  - HE : סידור נרות ושולחנות לפני האירוע
+  - EN : Setting candles and tables before the event
+  - FR : Mise en place des bougies et des tables avant l'événement
+  - ES : Colocando velas y mesas antes del evento
+- `alt.montage-tipis`
+  - HE : הצוות מקים אוהלי טיפי במשק
+  - EN : The team putting up tipi tents on the farm
+  - FR : L'équipe monte les tentes tipi dans la ferme
+  - ES : El equipo monta tiendas tipi en la granja
+- `alt.service-assiette`
+  - HE : מלצרית מגישה מנה בעמדה
+  - EN : A server plating a dish at a station
+  - FR : Une serveuse dresse une assiette sur une station
+  - ES : Una camarera emplata en una estación
+- `alt.service-desserts`
+  - HE : הגשת פירות מיובשים מתוך קערת עץ
+  - EN : Serving dried fruit from a wooden bowl
+  - FR : Service de fruits secs depuis un bol en bois
+  - ES : Sirviendo fruta deshidratada de un cuenco de madera
+- `alt.service-salades-tomates`
+  - HE : מגשי סלט עגבניות על השולחן
+  - EN : Platters of tomato salad on the table
+  - FR : Plats de salade de tomates sur la table
+  - ES : Fuentes de ensalada de tomate sobre la mesa
+- `alt.vase-blanc-mains`
+  - HE : אגרטל לבן מונח על בול עץ
+  - EN : A white vase set on a tree stump
+  - FR : Vase blanc posé sur une souche
+  - ES : Un jarrón blanco sobre un tocón
+- `alt.champagne-grenades`
+  - HE : בקבוקי שמפניה בדלי ורימונים
+  - EN : Champagne bottles in an ice bucket, with pomegranates
+  - FR : Bouteilles de champagne dans un seau et grenades
+  - ES : Botellas de champán en una cubitera y granadas
+- `alt.invites-desserts`
+  - HE : אורחות טועמות קינוחים
+  - EN : Guests tasting desserts
+  - FR : Des invitées goûtent les desserts
+  - ES : Invitadas probando los postres
+- `alt.invites-lounge`
+  - HE : אורחים אוכלים בלאונג'
+  - EN : Guests eating in a lounge
+  - FR : Des invités mangent dans un lounge
+  - ES : Invitados comiendo en un lounge
+- `alt.spritz-bar`
+  - HE : כוסות שפריץ על הבר בשקיעה
+  - EN : Spritz glasses on the bar at sunset
+  - FR : Verres de spritz sur le bar au coucher du soleil
+  - ES : Copas de spritz en la barra al atardecer
+- `alt.verres-alignes`
+  - HE : שורות של כוסות יין לפני האירוע
+  - EN : Rows of wine glasses before the event
+  - FR : Rangées de verres à vin avant l'événement
+  - ES : Filas de copas de vino antes del evento
+- `alt.vue-aerienne-tables`
+  - HE : צילום מלמעלה של שולחנות ולאונג'ים
+  - EN : A view from above of tables and lounges
+  - FR : Vue du ciel sur les tables et les lounges
+  - ES : Vista desde arriba de mesas y lounges
+- `alt.vue-aerienne`
+  - HE : צילום אוויר של שטח האירוע בין השדות
+  - EN : An aerial view of the event among the fields
+  - FR : Vue aérienne de la fête au milieu des champs
+  - ES : Vista aérea de la fiesta entre los campos
+- `alt.lounge-coussins-lin`
+  - HE : לאונג' עם כריות פשתן על הדשא
+  - EN : A lounge with linen cushions on the lawn
+  - FR : Lounge aux coussins de lin sur la pelouse
+  - ES : Un lounge con cojines de lino sobre el césped
+- `alt.lounge-coussins-verts`
+  - HE : לאונג' לבן עם כריות ירוקות
+  - EN : A white lounge with green cushions
+  - FR : Lounge blanc aux coussins verts
+  - ES : Un lounge blanco con cojines verdes
+- `alt.lounge-parasols`
+  - HE : לאונג'ים ושמשיות לבנות בגינה
+  - EN : Lounges and white parasols in the garden
+  - FR : Lounges et parasols blancs dans le jardin
+  - ES : Lounges y sombrillas blancas en el jardín
+- `alt.lounge-rose-orange`
+  - HE : לאונג' כתום עם כריות פסים ורודות
+  - EN : An orange lounge with pink striped cushions
+  - FR : Lounge orange aux coussins rayés roses
+  - ES : Un lounge naranja con cojines de rayas rosas
+- `alt.lounge-terracotta`
+  - HE : ספות טרקוטה ושולחן עץ בשטח
+  - EN : Terracotta sofas and a wooden table on site
+  - FR : Canapés terracotta et table en bois sur le terrain
+  - ES : Sofás terracota y una mesa de madera en el terreno
+- `alt.table-fleurs-tropicales`
+  - HE : שולחן עם פרחים טרופיים ועציצים
+  - EN : A table with tropical flowers and potted plants
+  - FR : Table aux fleurs tropicales et plantes en pot
+  - ES : Una mesa con flores tropicales y macetas
+- `alt.table-polaroids-grenades`
+  - HE : שולחן עם רימונים, דלעות ותמונות פולרואיד
+  - EN : A table with pomegranates, squash and Polaroid photos
+  - FR : Table de grenades, courges et photos Polaroid
+  - ES : Una mesa con granadas, calabazas y fotos Polaroid
+- `alt.table-vase-vert`
+  - HE : שולחן עם אגרטל ירוק ופרחים, בין עצי זית
+  - EN : A table with a green vase and flowers, among olive trees
+  - FR : Table au vase vert et aux fleurs, entre les oliviers
+  - ES : Una mesa con un jarrón verde y flores, entre olivos
+- `alt.tables-bois-fleurs`
+  - HE : שולחנות עץ ארוכים עם עציצים ורודים
+  - EN : Long wooden tables with pink potted flowers
+  - FR : Longues tables en bois et fleurs roses en pot
+  - ES : Largas mesas de madera con macetas de flores rosas
+- `alt.tables-bois-guirlandes`
+  - HE : שולחנות עץ ושרשראות אור בגינה
+  - EN : Wooden tables and string lights in the garden
+  - FR : Tables en bois et guirlandes lumineuses dans le jardin
+  - ES : Mesas de madera y guirnaldas de luces en el jardín
+- `alt.tables-coucher-soleil`
+  - HE : שולחנות ארוכים ואוהלי טיפי בשקיעה
+  - EN : Long tables and tipi tents at sunset
+  - FR : Longues tables et tentes tipi au coucher du soleil
+  - ES : Largas mesas y tiendas tipi al atardecer
+- `alt.tables-hautes-roses`
+  - HE : שולחנות גבוהים ורודים וכיסאות בר בשקיעה
+  - EN : Pink high tables and bar stools at sunset
+  - FR : Tables hautes roses et tabourets de bar au coucher du soleil
+  - ES : Mesas altas rosas y taburetes al atardecer
+- `alt.tables-palmiers`
+  - HE : שולחן ממוספר עם זר לבן ורימון
+  - EN : A numbered table with a white bouquet and a pomegranate
+  - FR : Table numérotée, bouquet blanc et grenade
+  - ES : Una mesa numerada con un ramo blanco y una granada
+- `alt.tables-rondes-fleurs`
+  - HE : שולחנות עגולים עם פרחים תחת שרשראות אור
+  - EN : Round tables with flowers under string lights
+  - FR : Tables rondes fleuries sous les guirlandes
+  - ES : Mesas redondas con flores bajo guirnaldas de luces
+- `alt.tipi-lounge-dore`
+  - HE : לאונג' מתחת לאוהל טיפי באור הזהב של הערב
+  - EN : A lounge under a tipi tent in the golden evening light
+  - FR : Lounge sous une tente tipi, dans la lumière dorée du soir
+  - ES : Un lounge bajo una tienda tipi, con la luz dorada de la tarde
+- `alt.tipi-olivier`
+  - HE : אוהל טיפי ושולחן עץ בין עצי זית
+  - EN : A tipi tent and a wooden table among olive trees
+  - FR : Tente tipi et table en bois entre les oliviers
+  - ES : Una tienda tipi y una mesa de madera entre olivos
+- `alt.tournesols-vase-blanc`
+  - HE : חמניות באגרטל לבן
+  - EN : Sunflowers in a white vase
+  - FR : Tournesols dans un vase blanc
+  - ES : Girasoles en un jarrón blanco
+- `alt.vases-tulipes`
+  - HE : זר צבעוני עם אנתוריום ופרחים אדומים
+  - EN : A colorful bouquet with anthurium and red flowers
+  - FR : Bouquet coloré d'anthuriums et de fleurs rouges
+  - ES : Un ramo colorido con anturios y flores rojas
+- `alt.buffet-grenades-olivier`
+  - HE : עמדה עם רימונים וענפי זית
+  - EN : A station with pomegranates and olive branches
+  - FR : Station décorée de grenades et de branches d'olivier
+  - ES : Una estación con granadas y ramas de olivo
+- `alt.buffet-legumes-rotis`
+  - HE : עמדה עם ירקות צלויים ובטטות
+  - EN : A station of roasted vegetables and sweet potatoes
+  - FR : Station de légumes rôtis et de patates douces
+  - ES : Una estación de verduras asadas y boniatos
+- `alt.chef-brochettes-braise`
+  - HE : שף צולה שיפודים על הגחלים
+  - EN : A chef grilling skewers over the embers
+  - FR : Un chef grille des brochettes sur la braise
+  - ES : Un chef asa brochetas sobre las brasas
+- `alt.chef-poele-pates`
+  - HE : שף מגיש פסטה מתוך מחבת גדולה
+  - EN : A chef serving pasta from a large pan
+  - FR : Un chef sert des pâtes depuis une grande poêle
+  - ES : Un chef sirve pasta desde una sartén grande
+- `alt.chef-station-courges`
+  - HE : שפים בעמדה מעוטרת בדלעות
+  - EN : Chefs at a station decorated with squash
+  - FR : Des chefs sur une station décorée de courges
+  - ES : Chefs en una estación decorada con calabazas
+- `alt.grill-flammes`
+  - HE : ירקות שלמים על אש גלויה
+  - EN : Whole vegetables over an open flame
+  - FR : Légumes entiers sur une flamme vive
+  - ES : Verduras enteras sobre la llama
+- `alt.grill-vigne`
+  - HE : גריל פתוח מתחת לגפן
+  - EN : An open grill under a vine
+  - FR : Grill ouvert sous une vigne
+  - ES : Una parrilla abierta bajo una parra
+- `alt.installation-legumes`
+  - HE : מיצב של ירקות ופירות תלויים
+  - EN : An installation of hanging vegetables and fruit
+  - FR : Installation de légumes et de fruits suspendus
+  - ES : Una instalación de verduras y frutas colgadas
+- `alt.marmite-cuivre-tomates`
+  - HE : סיר נחושת ועגבניות בשורת השולחנות
+  - EN : A copper pot and tomatoes along the tables
+  - FR : Marmite en cuivre et tomates le long des tables
+  - ES : Una olla de cobre y tomates junto a las mesas
+- `alt.patates-douces-grill`
+  - HE : בטטות צלויות על מגש
+  - EN : Roasted sweet potatoes on a tray
+  - FR : Patates douces rôties sur un plateau
+  - ES : Boniatos asados en una bandeja
+- `alt.station-chef-poeles`
+  - HE : שף מבשל בכמה מחבתות בעמדה
+  - EN : A chef cooking in several pans at a station
+  - FR : Un chef cuisine dans plusieurs poêles sur une station
+  - ES : Un chef cocina en varias sartenes en una estación
+- `alt.station-grenades`
+  - HE : עמדה עם רימונים וצלחות קרמיקה
+  - EN : A station with pomegranates and ceramic plates
+  - FR : Station de grenades et d'assiettes en céramique
+  - ES : Una estación con granadas y platos de cerámica
+- `alt.station-pates-tomates`
+  - HE : עמדת פסטה טרייה עם עגבניות ודלעות
+  - EN : A fresh pasta station with tomatoes and squash
+  - FR : Station de pâtes fraîches, tomates et courges
+  - ES : Una estación de pasta fresca con tomates y calabazas

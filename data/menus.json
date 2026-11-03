@@ -1,0 +1,9 @@
+{
+  "_note": "Exemples de menus tirés des plats visibles sur Instagram, à valider avec Mor & Cinnamon. priceFrom : prix « à partir de » par invité en shekels (null = « sur devis », rien n'est affiché).",
+  "currency": "ILS",
+  "menus": [
+    { "id": "stations", "image": "/media/stations-buffets/chef-poele-pates.jpg", "priceFrom": null, "dishes": 6 },
+    { "id": "served", "image": "/media/cuisine/poulet-grille-boulgour.jpg", "priceFrom": null, "dishes": 5 },
+    { "id": "desserts", "image": "/media/cuisine/pavlova-fruits-rouges.jpg", "priceFrom": null, "dishes": 5 }
+  ]
+}

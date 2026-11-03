@@ -1,0 +1,346 @@
+{
+ "/media/hero/poster-panel.jpg": [
+  864,
+  1080
+ ],
+ "/media/hero/poster-tall.jpg": [
+  720,
+  1280
+ ],
+ "/media/couples/adi-nimi.jpg": [
+  720,
+  1280
+ ],
+ "/media/couples/einav-davidi-houppa.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/einav-davidi-olivier.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/einav-davidi-tables.jpg": [
+  720,
+  960
+ ],
+ "/media/couples/hila-rotem-houppa.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/hila-rotem-mains.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/hila-rotem-marche.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/noam-nadav.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/roni-itay-danse.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/roni-itay-lounge.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/roni-itay-mariee-fleurs.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/roni-itay-sourire.jpg": [
+  900,
+  1600
+ ],
+ "/media/couples/roni-mariee.jpg": [
+  720,
+  960
+ ],
+ "/media/cuisine/assiette-boeuf-salade.jpg": [
+  1200,
+  1600
+ ],
+ "/media/cuisine/assiette-focaccia-viande.jpg": [
+  900,
+  1600
+ ],
+ "/media/cuisine/assiettes-poulet-haricots.jpg": [
+  900,
+  1600
+ ],
+ "/media/cuisine/barquettes-laitue-grenade.jpg": [
+  900,
+  1600
+ ],
+ "/media/cuisine/barquettes-salade.jpg": [
+  1600,
+  1066
+ ],
+ "/media/cuisine/boeuf-pommes-de-terre.jpg": [
+  1200,
+  1600
+ ],
+ "/media/cuisine/boeuf-tranche.jpg": [
+  1200,
+  1600
+ ],
+ "/media/cuisine/bouchees-piment.jpg": [
+  1600,
+  1066
+ ],
+ "/media/cuisine/bruschettas-tomates.jpg": [
+  900,
+  1600
+ ],
+ "/media/cuisine/chef-dressage.jpg": [
+  1600,
+  1066
+ ],
+ "/media/cuisine/choux-presentoir.jpg": [
+  1600,
+  1069
+ ],
+ "/media/cuisine/cocotte-brioche.jpg": [
+  900,
+  1600
+ ],
+ "/media/cuisine/crostinis-planche.jpg": [
+  1600,
+  1066
+ ],
+ "/media/cuisine/desserts-assiettes.jpg": [
+  1600,
+  1067
+ ],
+ "/media/cuisine/entrees-plateau-argent.jpg": [
+  1600,
+  1066
+ ],
+ "/media/cuisine/gateau-chocolat-creme.jpg": [
+  1600,
+  1069
+ ],
+ "/media/cuisine/meringue-coulis.jpg": [
+  1600,
+  1069
+ ],
+ "/media/cuisine/pates-legumes-grilles.jpg": [
+  1200,
+  1600
+ ],
+ "/media/cuisine/pavlova-fruits-rouges.jpg": [
+  1600,
+  1069
+ ],
+ "/media/cuisine/poulet-grille-boulgour.jpg": [
+  1200,
+  1600
+ ],
+ "/media/cuisine/salade-peches.jpg": [
+  1200,
+  1600
+ ],
+ "/media/stations-buffets/buffet-grenades-olivier.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/buffet-legumes-rotis.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/chef-brochettes-braise.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/chef-poele-pates.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/chef-station-courges.jpg": [
+  720,
+  960
+ ],
+ "/media/stations-buffets/grill-flammes.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/grill-vigne.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/installation-legumes.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/marmite-cuivre-tomates.jpg": [
+  720,
+  960
+ ],
+ "/media/stations-buffets/patates-douces-grill.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/station-chef-poeles.jpg": [
+  720,
+  1280
+ ],
+ "/media/stations-buffets/station-grenades.jpg": [
+  900,
+  1600
+ ],
+ "/media/stations-buffets/station-pates-tomates.jpg": [
+  1200,
+  1600
+ ],
+ "/media/lounges-deco/lounge-coussins-lin.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/lounge-coussins-verts.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/lounge-parasols.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/lounge-rose-orange.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/lounge-terracotta.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/table-fleurs-tropicales.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/table-polaroids-grenades.jpg": [
+  720,
+  1280
+ ],
+ "/media/lounges-deco/table-vase-vert.jpg": [
+  1200,
+  1600
+ ],
+ "/media/lounges-deco/tables-bois-fleurs.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tables-bois-guirlandes.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tables-coucher-soleil.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tables-hautes-roses.jpg": [
+  1200,
+  1600
+ ],
+ "/media/lounges-deco/tables-palmiers.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/tables-rondes-fleurs.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tipi-lounge-dore.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tipi-olivier.jpg": [
+  720,
+  960
+ ],
+ "/media/lounges-deco/tournesols-vase-blanc.jpg": [
+  900,
+  1600
+ ],
+ "/media/lounges-deco/vases-tulipes.jpg": [
+  900,
+  1600
+ ],
+ "/media/chupa-ceremonies/houppa-voilages-tapis.jpg": [
+  900,
+  1600
+ ],
+ "/media/chupa-ceremonies/voilage-olivier.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/dressage-assiettes.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/dressage-haricots.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/equipe-buffet.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/fleuriste-hortensias.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/mise-en-place-bougies.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/montage-tipis.jpg": [
+  720,
+  960
+ ],
+ "/media/equipe-montage/service-assiette.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/service-desserts.jpg": [
+  1600,
+  1069
+ ],
+ "/media/equipe-montage/service-salades-tomates.jpg": [
+  900,
+  1600
+ ],
+ "/media/equipe-montage/vase-blanc-mains.jpg": [
+  900,
+  1600
+ ],
+ "/media/galerie/champagne-grenades.jpg": [
+  900,
+  1600
+ ],
+ "/media/galerie/invites-desserts.jpg": [
+  1600,
+  1069
+ ],
+ "/media/galerie/invites-lounge.jpg": [
+  900,
+  1600
+ ],
+ "/media/galerie/spritz-bar.jpg": [
+  1200,
+  1600
+ ],
+ "/media/galerie/verres-alignes.jpg": [
+  900,
+  1600
+ ],
+ "/media/galerie/vue-aerienne-tables.jpg": [
+  900,
+  1600
+ ],
+ "/media/galerie/vue-aerienne.jpg": [
+  900,
+  1600
+ ]
+}
