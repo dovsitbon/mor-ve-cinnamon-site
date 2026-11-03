@@ -21,7 +21,7 @@ export function Intro({ skipLabel }: { skipLabel: string }) {
         sessionStorage.setItem(KEY, "1");
       } catch {}
       document.documentElement.classList.add("intro-seen");
-    }, 2100);
+    }, 1900);
     return () => clearTimeout(t);
   }, []);
 

@@ -40,7 +40,7 @@ export function Weddings({ items, labels }: { items: WeddingCard[]; labels: Labe
               type="button"
               onClick={() => setOpen({ w: k, i: 0 })}
               className={`zoom group relative block w-full cursor-zoom-in overflow-hidden bg-linen-deep ${LAYOUT[k % LAYOUT.length].box}`}
-              aria-label={labels.open.replace("{names}", w.names)}
+              aria-label={`${labels.open.replace("{names}", w.names)}, ${labels.photos.replace("{count}", String(w.photos.length))}`}
             >
               <Image src={w.cover.src} alt={w.cover.alt} fill sizes={k === 0 ? "(min-width: 768px) 55vw, 100vw" : "(min-width: 768px) 34vw, 50vw"} quality={70} className="object-cover" />
               <span className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/45 to-transparent" aria-hidden="true" />

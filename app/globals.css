@@ -387,7 +387,7 @@ html.lenis body {
   inset: 0;
   z-index: 100;
   background: var(--color-linen);
-  animation: intro-out 0.4s ease-out 1.6s forwards;
+  animation: intro-out 0.4s ease-out 1.45s forwards;
 }
 html.intro-seen .intro-curtain {
   display: none;
@@ -425,7 +425,7 @@ html.intro-seen .intro-curtain {
   background: linear-gradient(105deg, rgba(217, 183, 121, 0) 35%, rgba(232, 196, 130, 0.5) 48%, rgba(255, 236, 200, 0.6) 50%, rgba(217, 183, 121, 0) 63%);
   mix-blend-mode: soft-light;
   transform: translateX(-60%);
-  animation: intro-light 0.8s ease-in-out 0.95s forwards;
+  animation: intro-light 0.75s ease-in-out 0.8s forwards;
 }
 [dir="rtl"] .intro-light {
   transform: translateX(60%) scaleX(-1);
