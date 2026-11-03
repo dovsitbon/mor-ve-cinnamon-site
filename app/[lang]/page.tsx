@@ -31,7 +31,7 @@ function Photo({ d, src, sizes, className = "", quality = 70 }: { d: Dict; src: 
 function SectionHead({ eyebrow, title, text, center = false, id, light = false }: { eyebrow: string; title: string; text?: string; center?: boolean; id?: string; light?: boolean }) {
   return (
     <Reveal className={center ? "mx-auto max-w-3xl text-center" : "max-w-2xl"}>
-      <p className={`eyebrow ${light ? "!text-gold" : ""}`}>{eyebrow}</p>
+      <p className={`eyebrow ${light ? "!text-linen" : ""}`}>{eyebrow}</p>
       <h2 id={id} className="display mt-6 text-[1.55rem] md:text-[2.15rem] rtl:text-[2.3rem] md:rtl:text-[3.2rem]">
         {title}
       </h2>
@@ -275,9 +275,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             {d.process.steps.map((s, i) => (
               <li key={s.name} className="bg-olive p-8 md:p-10">
                 <Reveal delay={(i % 3) * 0.1}>
-                  <span className="num text-[0.8125rem] text-gold">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="num text-[0.8125rem] text-linen">{String(i + 1).padStart(2, "0")}</span>
                   <h3 className="display mt-5 text-[1.05rem] rtl:text-[1.6rem]">{s.name}</h3>
-                  <p className="mt-3 leading-[1.8] text-cream/80">{s.text}</p>
+                  <p className="mt-3 leading-[1.8] text-cream/90">{s.text}</p>
                 </Reveal>
               </li>
             ))}

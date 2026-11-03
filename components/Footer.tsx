@@ -71,7 +71,7 @@ export function Footer({ lang, d }: { lang: Locale; d: Dict }) {
           </ul>
         </div>
       </div>
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-2 border-t border-cream/15 px-5 py-6 text-[0.8125rem] text-cream/70 md:flex-row md:justify-between md:px-10">
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-2 border-t border-cream/15 px-5 py-6 text-[0.8125rem] text-cream/85 md:flex-row md:justify-between md:px-10">
         <p>
           © {year} <span translate="no">{site.nameLatin}</span> · {d.footer.rights}
         </p>
