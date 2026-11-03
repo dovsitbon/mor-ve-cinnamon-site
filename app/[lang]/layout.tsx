@@ -11,10 +11,11 @@ import { Intro } from "@/components/Intro";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
-// Jost (titres latins, élément LCP) et Assistant (texte) sont préchargées ;
-// Frank Ruhl Libre (titres hébreux) et Cormorant (accroches) arrivent en swap.
-const jost = Jost({ subsets: ["latin"], weight: ["300", "400"], variable: "--font-jost", display: "swap" });
-const assistant = Assistant({ subsets: ["hebrew", "latin"], weight: ["300", "400", "600"], variable: "--font-assistant", display: "swap" });
+// Aucune police n'est préchargée : le préchargement vaudrait pour les 4 langues (Jost ne sert presque pas
+// en hébreu, Frank Ruhl pas en latin). Le CSS étant inliné, chaque page ne demande que ses polices,
+// et le texte s'affiche tout de suite avec une police de secours aux mêmes métriques (swap).
+const jost = Jost({ subsets: ["latin"], weight: ["300", "400"], variable: "--font-jost", display: "swap", preload: false });
+const assistant = Assistant({ subsets: ["hebrew", "latin"], weight: ["300", "400", "600"], variable: "--font-assistant", display: "swap", preload: false });
 const frank = Frank_Ruhl_Libre({ subsets: ["hebrew", "latin"], weight: ["300", "400"], variable: "--font-frank", display: "swap", preload: false });
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400"], style: ["italic"], variable: "--font-cormorant", display: "swap", preload: false });
 
