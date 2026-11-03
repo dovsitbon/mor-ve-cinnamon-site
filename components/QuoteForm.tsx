@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useId, useState, type FormEvent, type ReactNode } from "react";
 import { WhatsAppIcon } from "@/components/icons";
 import { useLocale } from "@/components/providers";
@@ -135,9 +134,9 @@ export function QuoteForm() {
   const optional = <span className="normal-case tracking-normal">({f.optional})</span>;
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
+    <>
       {sent ? (
-        <motion.div key="sent" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.6 }} className="border border-line bg-cream p-8 text-center md:p-14" role="status">
+        <div key="sent" className="fade-in border border-line bg-cream p-8 text-center md:p-14" role="status">
           <p className="accent text-[2.4rem] leading-none text-cinnamon-ink">{d.quote.success.thanks}</p>
           <h3 className="display mt-5 text-[1.3rem] rtl:text-[2rem]">{d.quote.success.title}</h3>
           <p className="mx-auto mt-4 max-w-md leading-relaxed text-muted">{d.quote.success.text}</p>
@@ -150,9 +149,9 @@ export function QuoteForm() {
               {d.quote.success.reset}
             </button>
           </div>
-        </motion.div>
+        </div>
       ) : (
-        <motion.form key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }} onSubmit={onSubmit} noValidate className="space-y-14">
+        <form key="form" onSubmit={onSubmit} noValidate className="space-y-14">
           {/* 1 — L'événement */}
           <fieldset className="space-y-8">
             <legend className="mb-8 flex items-baseline gap-4">
@@ -240,8 +239,8 @@ export function QuoteForm() {
             <p className="mt-4 text-[0.8125rem] leading-relaxed text-muted">{d.quote.hint}</p>
             <p className="mt-1 text-[0.8125rem] leading-relaxed text-muted">{d.quote.consent}</p>
           </div>
-        </motion.form>
+        </form>
       )}
-    </AnimatePresence>
+    </>
   );
 }

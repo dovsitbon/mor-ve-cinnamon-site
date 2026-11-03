@@ -33,7 +33,7 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-const introScript = `try{if(sessionStorage.getItem("morcin-intro")==="1"||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-seen")}catch(e){}`;
+const introScript = `document.documentElement.classList.add("js");try{if(sessionStorage.getItem("morcin-intro")==="1"||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-seen")}catch(e){}`;
 
 export default async function LangLayout({ children, params }: LayoutProps<"/[lang]">) {
   const { lang } = await params;

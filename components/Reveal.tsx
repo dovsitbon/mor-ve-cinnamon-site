@@ -1,22 +1,35 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
 
-const TAGS = { div: motion.div, li: motion.li } as const;
+/**
+ * Apparition lente en fondu quand le bloc entre dans l'écran (IntersectionObserver + CSS, sans bibliothèque).
+ * Le contenu reste visible sans JavaScript ou si l'utilisateur préfère réduire les animations (globals.css).
+ * `as="li"` pour rester valide dans une liste.
+ */
+export function Reveal({ children, delay = 0, className = "", y = 24, as = "div" }: { children: ReactNode; delay?: number; className?: string; y?: number; as?: "div" | "li" }) {
+  const ref = useRef<HTMLElement>(null);
 
-/** Apparition lente en fondu ; `as="li"` pour rester valide dans une liste. */
-export function Reveal({ children, delay = 0, className, y = 24, as = "div" }: { children: ReactNode; delay?: number; className?: string; y?: number; as?: keyof typeof TAGS }) {
-  const reduce = useReducedMotion();
-  const Tag = TAGS[as];
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          el.classList.add("in");
+          io.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px -12% 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  const Tag = as;
+  const style = { "--reveal-delay": `${delay}s`, "--reveal-y": `${y}px` } as CSSProperties;
   return (
-    <Tag
-      className={className}
-      initial={reduce ? false : { opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -12% 0px" }}
-      transition={{ duration: 1.1, delay, ease: [0.22, 0.61, 0.36, 1] }}
-    >
+    <Tag ref={ref as never} className={`reveal ${className}`} style={style}>
       {children}
     </Tag>
   );

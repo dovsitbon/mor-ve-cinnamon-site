@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import site from "@/data/site.json";
 import { Leaves, Wordmark } from "@/components/Logo";
@@ -90,14 +89,9 @@ export function Header() {
         </div>
       </header>
 
-      <AnimatePresence>
-        {menu && (
-          <motion.div
-            className="fixed inset-0 z-[60] flex flex-col overscroll-contain bg-cream text-ink"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+      {menu && (
+          <div
+            className="fade-in fixed inset-0 z-[60] flex flex-col overscroll-contain bg-cream text-ink"
             role="dialog"
             aria-modal="true"
             aria-label={d.nav.menu}
@@ -111,17 +105,17 @@ export function Header() {
             </div>
             <nav className="flex flex-1 flex-col items-center justify-center gap-6" aria-label={d.nav.menu}>
               {links.map((l, i) => (
-                <motion.div key={l.href} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.06 * i + 0.1, duration: 0.7 }}>
+                <div key={l.href} className="fade-up" style={{ animationDelay: `${0.06 * i + 0.1}s` }}>
                   <Link href={l.href} onClick={() => setMenu(false)} className="display text-[1.45rem] rtl:text-[2rem]">
                     {l.label}
                   </Link>
-                </motion.div>
+                </div>
               ))}
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.7 }} className="mt-6">
+              <div className="fade-in mt-6" style={{ animationDelay: "0.5s" }}>
                 <Link href={`${home}#contact`} onClick={() => setMenu(false)} className="btn-solid">
                   {d.nav.checkDate}
                 </Link>
-              </motion.div>
+              </div>
               <Leaves className="mt-8 h-10 w-auto text-cinnamon" strokeWidth={4} />
             </nav>
             <div className="flex items-center justify-between border-t border-line px-6 py-4">
@@ -131,9 +125,8 @@ export function Header() {
                 <span dir="ltr">{site.instagramHandle}</span>
               </a>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </>
   );
 }

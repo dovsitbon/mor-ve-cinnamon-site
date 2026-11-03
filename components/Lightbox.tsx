@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useRef } from "react";
 import { ArrowIcon, CloseIcon } from "@/components/icons";
 import type { Img } from "@/lib/media";
@@ -57,21 +56,17 @@ export function Lightbox({ items, index, onIndex, labels, title }: { items: Ligh
   }, [index]);
 
   return (
-    <AnimatePresence>
+    <>
       {current && index !== null && (
-        <motion.div
-          className="fixed inset-0 z-[70] flex items-center justify-center overscroll-contain bg-ink/95 p-4 md:p-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
+        <div
+          className="fade-in fixed inset-0 z-[70] flex items-center justify-center overscroll-contain bg-ink/95 p-4 md:p-12"
           role="dialog"
           aria-modal="true"
           data-lightbox=""
           aria-label={title ?? current.alt}
           onClick={close}
         >
-          <motion.figure key={current.src} className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} onClick={(e) => e.stopPropagation()}>
+          <figure key={current.src} className="fade-in relative" onClick={(e) => e.stopPropagation()}>
             <Image src={current.src} alt={current.alt} width={current.width} height={current.height} sizes="90vw" quality={80} className="h-auto max-h-[78svh] w-auto max-w-[88vw]" />
             <figcaption className="mx-auto mt-4 flex max-w-[88vw] flex-wrap items-baseline justify-center gap-x-4 gap-y-1 text-center text-sm text-cream/80">
               {title && <span className="eyebrow !text-gold">{title}</span>}
@@ -82,7 +77,7 @@ export function Lightbox({ items, index, onIndex, labels, title }: { items: Ligh
                 </span>
               )}
             </figcaption>
-          </motion.figure>
+          </figure>
           <button ref={closeRef} type="button" onClick={close} className="absolute end-3 top-3 flex h-12 w-12 items-center justify-center text-cream" aria-label={labels.close}>
             <CloseIcon className="h-6 w-6" />
           </button>
@@ -96,8 +91,8 @@ export function Lightbox({ items, index, onIndex, labels, title }: { items: Ligh
               </button>
             </>
           )}
-        </motion.div>
+        </div>
       )}
-    </AnimatePresence>
+    </>
   );
 }
