@@ -1,5 +1,7 @@
 # Mor & Cinnamon — site et demande de devis
 
+Production : https://mor-ve-cinnamon.vercel.app (Vercel, équipe ds6-b15d, redéployé à chaque push sur `main`).
+
 Site 4 langues (hébreu par défaut en RTL, anglais, français, espagnol) de **מור וקינמון | קייטרינג והפקה**, traiteur et production de mariages en plein air en Israël.
 
 - Next.js 16 (rendu statique par langue, `/he` `/en` `/fr` `/es`, hreflang), Tailwind 4, Framer Motion, Lenis.
